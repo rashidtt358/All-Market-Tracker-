@@ -1,0 +1,31 @@
+name: Scrape Goodreturns HTML
+
+on:
+  schedule:
+    # ദിവസവും രാവിലെ ഇന്ത്യൻ സമയം 9:00 മണിക്ക് റൺ ചെയ്യാൻ (UTC 3:30)
+    - cron: '30 3 * * *'
+  workflow_dispatch: # ആവശ്യമുള്ളപ്പോൾ GitHub-ൽ നിന്നും നേരിട്ട് റൺ ചെയ്യാൻ (Manual trigger)
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Run Scraper Script
+      run: npm start
+
+    - name: Commit and Push changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add goodreturns_data.html
+        git commit -m "Updated Goodreturns HTML data" || echo "No changes to commit"
+        git push
