@@ -3621,6 +3621,10 @@ text-align: center;
 	if (['CAMP123', 'CAMPRRR'].includes(utmParams?.utm_medium)) {
 		oiDisableAds({ gpt: 1, gam1: 1, gam2: 1 }, { stopBidders: false, stopNativeOcean: true, partner: true });
 	}
+	// Drivespark, all language channels: no ads at all for CAMP123 traffic
+	if (domainmiddle == "drivespark" && utmParams?.utm_medium?.includes("CAMP123")) {
+		oiDisableAds({}, { stopNativeOcean: true, partner: true });
+	}
 	if (document?.head?.dataset?.monetization == "false") {
 		oiDisableAds({}, { stopVideo: false, readMore: true });
 	}
@@ -3681,7 +3685,7 @@ text-align: center;
 					const variant = `${lang}_${sizes[key]}`;
 					banners[lang][key][category] = {
 						banner: `https://imagesvs.oneindia.com/img/oneindia_${category}_${variant}-${uploadIds[category][variant]}.png`,
-						url: `https://partner.talktoguruji.com/${ttgLandingLang}/oneindia/${category}?utm_source=${urlUtm}&utm_medium=HP-Native&utm_campaign=TTG-${category[0].toUpperCase() + category.slice(1)}`,
+						url: `https://partner.talktoguruji.com/${ttgLandingLang}/oneindia/${category}?utm_source=${urlUtm}&utm_medium=RI&utm_campaign=TTG-${category[0].toUpperCase() + category.slice(1)}`,
 					};
 				}
 			}
@@ -4021,7 +4025,7 @@ text-align: center;
   var gutter_ad = 0;
   var non_gutter_ad = 1;
   var com_cnt;
-</script> <script type="0309b63f1e92162bff44625b-text/javascript" data-pagespeed-no-defer> var promotional_details = { promoflag:0,promolink:['https://www.oneindia.com/business/grab-an-opportunity-to-start-your-own-business-2621386.html'],promolimit:3 };</script> <noscript> <img src="https://b.scorecardresearch.com/p?c1=2&c2=7732551&cv=2.0&cj=1" /> </noscript> <!-- End comScore Tag --> <!--GA4 Code Start--> <script data-cfasync="false" data-pagespeed-no-defer async src="https://www.googletagmanager.com/gtag/js?id=G-T6TQLQJG97"></script> <script data-pagespeed-no-defer data-cfasync="false">
+</script> <script type="00e2fcacb49b7c8655cec8fe-text/javascript" data-pagespeed-no-defer> var promotional_details = { promoflag:0,promolink:['https://www.oneindia.com/business/grab-an-opportunity-to-start-your-own-business-2621386.html'],promolimit:3 };</script> <noscript> <img src="https://b.scorecardresearch.com/p?c1=2&c2=7732551&cv=2.0&cj=1" /> </noscript> <!-- End comScore Tag --> <!--GA4 Code Start--> <script data-cfasync="false" data-pagespeed-no-defer async src="https://www.googletagmanager.com/gtag/js?id=G-T6TQLQJG97"></script> <script data-pagespeed-no-defer data-cfasync="false">
   var liveGA = "G-T6TQLQJG97";
   var rosGA = "G-GRDQ7RTQZC";
   var universalGA = "G-09Y63T23W1";
@@ -4305,7 +4309,7 @@ document,'script','https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '407111549682023');
 
 fbq('track', 'PageView');
-</script>--> <script type="0309b63f1e92162bff44625b-text/javascript">
+</script>--> <script type="00e2fcacb49b7c8655cec8fe-text/javascript">
 	var ref_logic={"refresh_all":true,"refresh_infinite":true,"idle_refresh_count":5,"anymind_idle_refresh_count":3};
 	if(['www.drivespark.com', 'tamil.drivespark.com'].includes(window.location.hostname)){
 		ref_logic={"refresh_all":true,"refresh_infinite":true,"idle_refresh_count":3,"anymind_idle_refresh_count":3};
@@ -5652,27 +5656,27 @@ span.notification-num {
                             <!-- SENSEX -->
                 <a href="/bse/" class="gr-wealth-ticker-item">
                     <span class="gr-wealth-ticker-label">Sensex</span>
-                    <span class="gr-wealth-ticker-value">73,441.86</span>
-                                            <span class="gr-wealth-ticker-change gr-wealth-up">▲ +0.43%</span>
+                    <span class="gr-wealth-ticker-value">73,606.75</span>
+                                            <span class="gr-wealth-ticker-change gr-wealth-up">▲ +0.66%</span>
                                     </a>
 
                 <!-- NIFTY -->
                 <a href="/nse/" class="gr-wealth-ticker-item">
                     <span class="gr-wealth-ticker-label">Nifty</span>
-                    <span class="gr-wealth-ticker-value">22,697.70</span>
-                                            <span class="gr-wealth-ticker-change gr-wealth-up">▲ +0.43%</span>
+                    <span class="gr-wealth-ticker-value">22,753.20</span>
+                                            <span class="gr-wealth-ticker-change gr-wealth-up">▲ +0.68%</span>
                                     </a>
 
                 <!-- GOLD -->
                 <a href="/gold-rates/" class="gr-wealth-ticker-item">
                     <span class="gr-wealth-ticker-label">22k Gold</span>
-                    <span class="gr-wealth-ticker-value">₹ 13,085/gm</span>
+                    <span class="gr-wealth-ticker-value">₹ 13,086/gm</span>
                 </a>
 
                 <!-- SILVER -->
                 <a href="/silver-rates/" class="gr-wealth-ticker-item">
                     <span class="gr-wealth-ticker-label">Silver</span>
-                    <span class="gr-wealth-ticker-value">₹ 2,20,000/kg</span>
+                    <span class="gr-wealth-ticker-value">₹ 2,19,900/kg</span>
                 </a>
 
                 <!-- PETROL -->
@@ -5696,38 +5700,38 @@ span.notification-num {
                 <!-- CRUDE OIL -->
                 <a href="/crude-oil-price.html" class="gr-wealth-ticker-item">
                     <span class="gr-wealth-ticker-label">Crude Oil</span>
-                    <span class="gr-wealth-ticker-value">$ 109.88</span>
+                    <span class="gr-wealth-ticker-value">$ 109.70</span>
                 </a>
 
                 <!-- CURRENCY -->
                 <a href="/currency/" class="gr-wealth-ticker-item">
                     <span class="gr-wealth-ticker-label">USD</span>
-                    <span class="gr-wealth-ticker-value">₹ 95.26</span>
+                    <span class="gr-wealth-ticker-value">₹ 95.24</span>
                 </a>
                             <!-- SENSEX -->
                 <a href="/bse/" class="gr-wealth-ticker-item">
                     <span class="gr-wealth-ticker-label">Sensex</span>
-                    <span class="gr-wealth-ticker-value">73,441.86</span>
-                                            <span class="gr-wealth-ticker-change gr-wealth-up">▲ +0.43%</span>
+                    <span class="gr-wealth-ticker-value">73,606.75</span>
+                                            <span class="gr-wealth-ticker-change gr-wealth-up">▲ +0.66%</span>
                                     </a>
 
                 <!-- NIFTY -->
                 <a href="/nse/" class="gr-wealth-ticker-item">
                     <span class="gr-wealth-ticker-label">Nifty</span>
-                    <span class="gr-wealth-ticker-value">22,697.70</span>
-                                            <span class="gr-wealth-ticker-change gr-wealth-up">▲ +0.43%</span>
+                    <span class="gr-wealth-ticker-value">22,753.20</span>
+                                            <span class="gr-wealth-ticker-change gr-wealth-up">▲ +0.68%</span>
                                     </a>
 
                 <!-- GOLD -->
                 <a href="/gold-rates/" class="gr-wealth-ticker-item">
                     <span class="gr-wealth-ticker-label">22k Gold</span>
-                    <span class="gr-wealth-ticker-value">₹ 13,085/gm</span>
+                    <span class="gr-wealth-ticker-value">₹ 13,086/gm</span>
                 </a>
 
                 <!-- SILVER -->
                 <a href="/silver-rates/" class="gr-wealth-ticker-item">
                     <span class="gr-wealth-ticker-label">Silver</span>
-                    <span class="gr-wealth-ticker-value">₹ 2,20,000/kg</span>
+                    <span class="gr-wealth-ticker-value">₹ 2,19,900/kg</span>
                 </a>
 
                 <!-- PETROL -->
@@ -5751,13 +5755,13 @@ span.notification-num {
                 <!-- CRUDE OIL -->
                 <a href="/crude-oil-price.html" class="gr-wealth-ticker-item">
                     <span class="gr-wealth-ticker-label">Crude Oil</span>
-                    <span class="gr-wealth-ticker-value">$ 109.88</span>
+                    <span class="gr-wealth-ticker-value">$ 109.70</span>
                 </a>
 
                 <!-- CURRENCY -->
                 <a href="/currency/" class="gr-wealth-ticker-item">
                     <span class="gr-wealth-ticker-label">USD</span>
-                    <span class="gr-wealth-ticker-value">₹ 95.26</span>
+                    <span class="gr-wealth-ticker-value">₹ 95.24</span>
                 </a>
                     </div>
     </div>
@@ -6276,13 +6280,13 @@ background-position: calc(100% - 40px) top;border-radius: 6px;margin: 24px auto;
 .gr-wealth-promobanner-lightmode-explore span {font-size: 16px;color: #FFFFFF;line-height: 20px;font-weight: 700;}
 .gr-wealth-promobanner-lightmode-explore svg {width: 16px;height: 16px;}
 
-</style> <section> <div class="gr-wealth-promobanner-darkmode"> <a href="https://www.goodreturns.in/wealth/?ref_source=Homepage&ref_medium=Banner&ref_campaign=Wealth"> <div class="gr-wealth-promobanner-content-darkmode"> <div class="gr-wealth-promobanner-left-darkmode"> <div class="gr-wealth-promobanner-logo-darkmode"><img src="https://images.goodreturns.in/images/goodreturns_wealth-transparent-logo-1781247397611.svg" alt="GoodReturns" class="logo dark-logo"></div> <div class="gr-wealth-promobanner-details-darkmode"> <div class="gr-wealth-promobanner-title-darkmode">For Those Who Read Beyond Headlines.</div> <div class="gr-wealth-promobanner-navigation-darkmode"> <span class="">Deep Analysis</span> <span class="">Market Intelligence</span> <span class="">Trends</span> </div> </div> </div> <div class="gr-wealth-promobanner-right-darkmode"> <div class="gr-wealth-promobanner-darkmode-explore"> <span>Explore</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg> </div> </div> </div> </a> </div> </section> <section> <div class="gr-wealth-promobanner-lightmode"> <a href="https://www.goodreturns.in/wealth/?ref_source=Homepage&ref_medium=Banner&ref_campaign=Wealth"> <div class="gr-wealth-promobanner-content-lightmode"> <div class="gr-wealth-promobanner-logo-lightmode"><img src="https://images.goodreturns.in/images/goodreturns_wealth-logo-1781247364334.svg" alt="GoodReturns" class="logo light-logo"></div> <div class="gr-wealth-promobanner-details-lightmode"> <div class="gr-wealth-promobanner-title-lightmode">India's Wealth Story, <span>Decoded.</span></div> <div class="gr-wealth-promobanner-navigation-lightmode"> <ul> <li class="">Markets</li> <li class="">NRI Wealth</li> <li class="">Companies</li> </ul> </div> </div> <div class="gr-wealth-promobanner-right-lightmode"> <div class="gr-wealth-promobanner-lightmode-explore"> <span>Explore →</span> </div> </div> </div> </a> </div> </section> <div class="gr-main-container"> <div class="left-section"> <!--TOP HEADLINE CONTAINER--> <div class="top-headline-container"> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h1>Top Headlines</h1> </div> </div> <a href="/news/jio-ipo-allotment-status-how-to-check-your-application-status-kfin-bse-nse-gmp-listing-predictions-1543365.html"> <article class="top-headline-card-container"> <div class="top-headline-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/img/fit-in/312x195/2026/10/jioipoallotmentstatustoday-70301792996050.jpg"> <img src="https://images.goodreturns.in/img/fit-in/312x195/2026/10/jioipoallotmentstatustoday-70301792996050.jpg" fetchpriority="high" alt="Jio IPO Allotment Status Today, October 26: How To Check Your Application Status At Kfin, BSE, NSE Via PAN Card? Check GMP, Listing Date & Predictions" title="Jio IPO Allotment Status Today, October 26: How To Check Your Application Status At Kfin, BSE, NSE Via PAN Card? Check GMP, Listing Date & Predictions" /> </picture> </div> <div class="top-headline-card__content"> <h3>
- Jio IPO Allotment Status Today, October 26: How To Check Your Application Status At Kfin, BSE, NSE Via PAN Card? Check GMP, Listing Date & Predictions</h3> </div> </article> </a> </div> <!--Latest Updates Container--> <div class="latest-updates-container gr-section-container"> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/news/lpg-gas-cylinder-new-rules-from-november-1-what-5-lpg-refill-rules-for-indane-gas-hp-gas-bharat-gas-1543355.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/img/290x163/2026/10/gascylinderrefillnewrules-42751792987994.jpg"> <img src="https://images.goodreturns.in/img/290x163/2026/10/gascylinderrefillnewrules-42751792987994.jpg" fetchpriority="high" alt="LPG Gas Cylinder New Rules From November 1: What Are 5 LPG Refill Rules For Indane Gas, HP Gas, Bharat Gas?" title="LPG Gas Cylinder New Rules From November 1: What Are 5 LPG Refill Rules For Indane Gas, HP Gas, Bharat Gas?" /> </picture> </div> <div class="gr-common-card__content"> <h3>
-                                                     LPG Gas Cylinder New Rules From November 1: What Are 5 LPG Refill Rules For Indane Gas, HP Gas, Bharat Gas?</h3> </div> </article> </a> <a href="/news/gold-rates-silver-rates-today-26-10-2026-live-spot-gold-silver-price-mcx-gold-24k-22k-18k-gold-price-1543351.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/img/290x163/2026/10/goldsilverpricestodaylive2-11551792985465.jpg"> <img src="https://images.goodreturns.in/img/290x163/2026/10/goldsilverpricestodaylive2-11551792985465.jpg" fetchpriority="high" alt="Gold Rates & Silver Rates Today (26/10/2026) LIVE: MCX Gold Nears Rs 1,42,500, MCX Silver Under Pressure; Know 24K, 22K, 18K Gold Prices" title="Gold Rates & Silver Rates Today (26/10/2026) LIVE: MCX Gold Nears Rs 1,42,500, MCX Silver Under Pressure; Know 24K, 22K, 18K Gold Prices" /> </picture> </div> <div class="gr-common-card__content"> <h3> <div class="live-update" style="display: block; margin-left: 5px; margin-bottom: 5px;"><span>Live</span></div>
-                                                                                                        Gold Rates & Silver Rates Today (26/10/2026) LIVE: MCX Gold Nears Rs 1,42,500, MCX Silver Under Pressure; Know 24K, 22K, 18K Gold Prices</h3> </div> </article> </a> <a href="/news/valmiki-jayanti-holiday-today-october-26-banks-schools-colleges-and-offices-to-stay-closed-or-op-1543347.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/img/290x163/2026/10/valmikijayantiholiday2-24851792953201.jpg"> <img src="https://images.goodreturns.in/img/290x163/2026/10/valmikijayantiholiday2-24851792953201.jpg" fetchpriority="high" alt="Valmiki Jayanti Holiday Today, October 26: Will Banks, Schools, Colleges & Offices Stay Closed or Remain Open?" title="Valmiki Jayanti Holiday Today, October 26: Will Banks, Schools, Colleges & Offices Stay Closed or Remain Open?" /> </picture> </div> <div class="gr-common-card__content"> <h3>
-                                                     Valmiki Jayanti Holiday Today, October 26: Will Banks, Schools, Colleges & Offices Stay Closed or Remain Open?</h3> </div> </article> </a> </div> <!--gr common button--> <a href="/latest/" class="top-common-btn"> <button class="grbtn">
+</style> <section> <div class="gr-wealth-promobanner-darkmode"> <a href="https://www.goodreturns.in/wealth/?ref_source=Homepage&ref_medium=Banner&ref_campaign=Wealth"> <div class="gr-wealth-promobanner-content-darkmode"> <div class="gr-wealth-promobanner-left-darkmode"> <div class="gr-wealth-promobanner-logo-darkmode"><img src="https://images.goodreturns.in/images/goodreturns_wealth-transparent-logo-1781247397611.svg" alt="GoodReturns" class="logo dark-logo"></div> <div class="gr-wealth-promobanner-details-darkmode"> <div class="gr-wealth-promobanner-title-darkmode">For Those Who Read Beyond Headlines.</div> <div class="gr-wealth-promobanner-navigation-darkmode"> <span class="">Deep Analysis</span> <span class="">Market Intelligence</span> <span class="">Trends</span> </div> </div> </div> <div class="gr-wealth-promobanner-right-darkmode"> <div class="gr-wealth-promobanner-darkmode-explore"> <span>Explore</span> <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg> </div> </div> </div> </a> </div> </section> <section> <div class="gr-wealth-promobanner-lightmode"> <a href="https://www.goodreturns.in/wealth/?ref_source=Homepage&ref_medium=Banner&ref_campaign=Wealth"> <div class="gr-wealth-promobanner-content-lightmode"> <div class="gr-wealth-promobanner-logo-lightmode"><img src="https://images.goodreturns.in/images/goodreturns_wealth-logo-1781247364334.svg" alt="GoodReturns" class="logo light-logo"></div> <div class="gr-wealth-promobanner-details-lightmode"> <div class="gr-wealth-promobanner-title-lightmode">India's Wealth Story, <span>Decoded.</span></div> <div class="gr-wealth-promobanner-navigation-lightmode"> <ul> <li class="">Markets</li> <li class="">NRI Wealth</li> <li class="">Companies</li> </ul> </div> </div> <div class="gr-wealth-promobanner-right-lightmode"> <div class="gr-wealth-promobanner-lightmode-explore"> <span>Explore →</span> </div> </div> </div> </a> </div> </section> <div class="gr-main-container"> <div class="left-section"> <!--TOP HEADLINE CONTAINER--> <div class="top-headline-container"> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h1>Top Headlines</h1> </div> </div> <a href="/news/stock-market-outlook-today-october-27-sensex-nifty-likely-to-remain-volatile-ahead-of-monthly-exp-1543397.html"> <article class="top-headline-card-container"> <div class="top-headline-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/img/fit-in/312x195/2026/10/stockmarketoutlookimage-79721793018113.jpg"> <img src="https://images.goodreturns.in/img/fit-in/312x195/2026/10/stockmarketoutlookimage-79721793018113.jpg" fetchpriority="high" alt="Stock Market Outlook Today, October 27: Sensex, Nifty May Remain Volatile Ahead of Monthly Expiry" title="Stock Market Outlook Today, October 27: Sensex, Nifty May Remain Volatile Ahead of Monthly Expiry" /> </picture> </div> <div class="top-headline-card__content"> <h3>
+ Stock Market Outlook Today, October 27: Sensex, Nifty May Remain Volatile Ahead of Monthly Expiry</h3> </div> </article> </a> </div> <!--Latest Updates Container--> <div class="latest-updates-container gr-section-container"> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/news/diwali-gift-soon-buy-infosys-share-price-ahead-of-rs-26-sh-dividend-record-date-5-brokers-recommends-1543393.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/img/290x163/2026/10/infosys-24181793013190.jpg"> <img src="https://images.goodreturns.in/img/290x163/2026/10/infosys-24181793013190.jpg" fetchpriority="high" alt="Diwali Gift Soon: Should You Buy Infosys Share Ahead Of Rs 26 Dividend Record Date? 5 Brokers Recommendations Here" title="Diwali Gift Soon: Should You Buy Infosys Share Ahead Of Rs 26 Dividend Record Date? 5 Brokers Recommendations Here" /> </picture> </div> <div class="gr-common-card__content"> <h3>
+                                                     Diwali Gift Soon: Should You Buy Infosys Share Ahead Of Rs 26 Dividend Record Date? 5 Brokers Recommendations Here</h3> </div> </article> </a> <a href="/news/paras-healthcare-ipo-allotment-status-5-steps-to-check-application-status-using-pan-card-gmp-listing-1543385.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/img/290x163/2026/10/parashealthcareipoallotmentstatus-32431793009431.jpg"> <img src="https://images.goodreturns.in/img/290x163/2026/10/parashealthcareipoallotmentstatus-32431793009431.jpg" fetchpriority="high" alt="Paras Healthcare IPO Allotment Status: Steps To Check Application Status; GMP Hints At 1.30% Premium Listing" title="Paras Healthcare IPO Allotment Status: Steps To Check Application Status; GMP Hints At 1.30% Premium Listing" /> </picture> </div> <div class="gr-common-card__content"> <h3>
+                                                     Paras Healthcare IPO Allotment Status: Steps To Check Application Status; GMP Hints At 1.30% Premium Listing</h3> </div> </article> </a> <a href="/news/jio-ipo-allotment-status-how-to-check-your-application-status-kfin-bse-nse-gmp-listing-predictions-1543365.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/img/290x163/2026/10/jioipoallotmentstatustoday-70301792996050.jpg"> <img src="https://images.goodreturns.in/img/290x163/2026/10/jioipoallotmentstatustoday-70301792996050.jpg" fetchpriority="high" alt="Jio IPO Allotment Status Today, October 26: How To Check Your Application Status At Kfin, BSE, NSE Via PAN Card? Check GMP, Listing Date & Predictions" title="Jio IPO Allotment Status Today, October 26: How To Check Your Application Status At Kfin, BSE, NSE Via PAN Card? Check GMP, Listing Date & Predictions" /> </picture> </div> <div class="gr-common-card__content"> <h3>
+                                                     Jio IPO Allotment Status Today, October 26: How To Check Your Application Status At Kfin, BSE, NSE Via PAN Card? Check GMP, Listing Date & Predictions</h3> </div> </article> </a> </div> <!--gr common button--> <a href="/latest/" class="top-common-btn"> <button class="grbtn">
 								See Latest Updates
-							</button> </a> </div> </div> <div class="right-section"> <!--AD WRAPPER--> <div class="ad-wrapper"> <div class="ad-box"> <div id="are-slot-mr1" class="oiad oi-axt oiadv" style="min-height:250px!important;padding:0!important;margin:0!important"></div> </div> </div> </div> </div> <!--<div class="gr-section-container gr-bor-bot"> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Editor's Picks</h2> </div> <a href="/topic/editors-picks/" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <div class="gr-common-card-wrapper"> <a href="/wealth/nri-wealth/81-years-after-little-boy-hit-hiroshima-why-the-world-no-longer-fears-war-1526653.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/08/ww60-28101785996122.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/08/ww60-28101785996122.jpg" alt="81 Years After ‘Little Boy’: Why War Feels Normal" title="81 Years After ‘Little Boy’: Why War Feels Normal" /> </picture> </div> <div class="gr-common-card__content"> <h3>81 Years After ‘Little Boy’: Why War Feels Normal</h3> </div> </article> </a> <a href="/wealth/markets/how-to-buy-us-stocks-via-gift-city-india-guide-2026-apple-nvidia-microsoft-explained-1524667.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/07/us12-90491785217966.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/07/us12-90491785217966.jpg" alt="How To Buy US Stocks Via GIFT City" title="How To Buy US Stocks Via GIFT City" /> </picture> </div> <div class="gr-common-card__content"> <h3>How To Buy US Stocks Via GIFT City</h3> </div> </article> </a> <a href="/wealth/nri-wealth/9-carat-gold-explained-is-it-better-than-22k-24k-and-18k-gold-for-jewellery-buyers-1524529.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/07/gold62-91631785150260.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/07/gold62-91631785150260.jpg" alt="9 Carat Gold Explained" title="9 Carat Gold Explained" /> </picture> </div> <div class="gr-common-card__content"> <h3>9 Carat Gold Explained</h3> </div> </article> </a> <a href="/wealth/markets/wall-street-great-divergence-us-stock-market-margin-debt-leverage-risks-s-p-500-dow-outlook-1524505.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/07/stock121-74041785143549.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/07/stock121-74041785143549.jpg" alt="Wall Street Running On Fumes: The Great Divergence" title="Wall Street Running On Fumes: The Great Divergence" /> </picture> </div> <div class="gr-common-card__content"> <h3>Wall Street Running On Fumes: The Great Divergence</h3> </div> </article> </a> </div> </div>--> <section> <div class="gr-section-container gr-bor-bot"> <div class="gr-wealth-widget" aria-label="Wealth"> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2 class="gr-wealth-widget-title"><span>Wealth</span> <svg class="gr-wealth-widget-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="https://www.w3.org/2000/svg"> <path d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#159B5A"/> <path d="M7.83805 10.6775L7.19849 11.2816L5.28075 13.0934L3.78128 14.5013C3.52639 14.7408 3.10951 14.6531 2.8873 14.414C2.65949 14.1685 2.64221 13.7437 2.89524 13.5023L4.80318 11.6789L6.69291 9.88064L7.71527 8.9031C7.84085 8.78312 7.98137 8.7187 8.15503 8.71823C8.34176 8.71823 8.50515 8.78125 8.63773 8.91617L10.0732 10.2583L10.7529 10.8871L14.8541 6.948L14.186 6.75567L13.208 6.47324C12.8551 6.39061 12.6716 6.02368 12.8075 5.69316C12.898 5.47282 13.0964 5.35891 13.3355 5.35938L16.8656 5.36778C17.086 5.36825 17.2778 5.59233 17.2778 5.80707L17.276 9.3802C17.276 9.52445 17.2251 9.63275 17.1336 9.73546C17.0309 9.8503 16.8936 9.91052 16.741 9.91005C16.4623 9.91005 16.2714 9.73219 16.2032 9.47263L15.8087 7.97177L15.1075 8.63187L14.0002 9.68177L11.2543 12.3105C11.0078 12.5462 10.6129 12.6293 10.3449 12.381L8.68348 10.8418L8.17463 10.3689L7.83805 10.6775Z" fill="#FCFDFD"/> </svg></h2> </div> <a href="/wealth/" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <div class="gr-wealth-widget-grid"> <a class="gr-wealth-widget-card" href="/wealth/companies/rs-49-03-40-00-00-000-why-mukesh-ambanis-jio-ipo-has-everyone-talking-1543269.html"> <div class="gr-wealth-widget-thumb"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/jioipo2-87661792828795.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/jioipo2-87661792828795.jpg" alt="Rs 49,03,40,00,00,000: Why Mukesh Ambani&#39;s Jio IPO Has Everyone Talking" title="Rs 49,03,40,00,00,000: Why Mukesh Ambani&#39;s Jio IPO Has Everyone Talking" /> </picture> </div> <div class="gr-wealth-widget-headline">Rs 49,03,40,00,00,000: Why Mukesh Ambani&#39;s Jio IPO Has Everyone Talking</div> </a> <a class="gr-wealth-widget-card" href="/wealth/markets/silver-rates-lowest-since-november-2025-why-ai-fears-are-hurting-silver-prices-more-fed-rate-hikes-1543023.html"> <div class="gr-wealth-widget-thumb"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/silverratestoday-14271792739120.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/silverratestoday-14271792739120.jpg" alt="Silver Rates Hit Lowest Since November 2025: Why AI Fears Are Hurting Prices More Than Fed Rate Hike" title="Silver Rates Hit Lowest Since November 2025: Why AI Fears Are Hurting Prices More Than Fed Rate Hike" /> </picture> </div> <div class="gr-wealth-widget-headline">Silver Rates Hit Lowest Since November 2025: Why AI Fears Are Hurting Prices More Than Fed Rate Hike</div> </a> <a class="gr-wealth-widget-card" href="/wealth/companies/jio-ipo-jackpot-from-first-reliance-ipo-to-ipo-of-century-can-ambani-beat-tata-at-scale-and-airtel-1541963.html"> <div class="gr-wealth-widget-thumb"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/jioplatformsipo-46611792140282.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/jioplatformsipo-46611792140282.jpg" alt="From First Reliance IPO To IPO Of Century: Can Ambani Beat Tata at Scale and Airtel at Telecom?" title="From First Reliance IPO To IPO Of Century: Can Ambani Beat Tata at Scale and Airtel at Telecom?" /> </picture> </div> <div class="gr-wealth-widget-headline">From First Reliance IPO To IPO Of Century: Can Ambani Beat Tata at Scale and Airtel at Telecom?</div> </a> <a class="gr-wealth-widget-card" href="/wealth/companies/us-h1-b-visa-green-card-freeze-tcs-infosys-cognizant-wipro-5-points-indian-tech-employees-to-know-1540307.html"> <div class="gr-wealth-widget-thumb"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/usgreencardsuspension-29831791528371.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/usgreencardsuspension-29831791528371.jpg" alt="US H1-B Visa Green Card Freeze: 5 Things Indian Tech Employees Need To Know" title="US H1-B Visa Green Card Freeze: 5 Things Indian Tech Employees Need To Know" /> </picture> </div> <div class="gr-wealth-widget-headline">US H1-B Visa Green Card Freeze: 5 Things Indian Tech Employees Need To Know</div> </a> </div> </div> </div> </div> </section> <!--Gold Trends--> <div class="gr-section-container gr-bor-bot"> <!--heading--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Gold Trends</h2> </div> <a href="/topic/gold" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/news/gold-rates-today-26-10-2026-22k-gold-rises-rs-1500-at-ibja-malabar-joyalukkas-24k-22k-18k-gold-price-1543373.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/goldratestanishqibjamalabar-22151793000657.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/goldratestanishqibjamalabar-22151793000657.jpg" alt="Gold Rates Today, 26.10.2026: 22K Gold Rises Rs 1,500 At , IBJA, Malabar, Joyalukkas; Latest Prices" title="Gold Rates Today, 26.10.2026: 22K Gold Rises Rs 1,500 At , IBJA, Malabar, Joyalukkas; Latest Prices" /> </picture> </div> <div class="gr-common-card__content"> <h3>Gold Rates Today, 26.10.2026: 22K Gold Rises Rs 1,500 At , IBJA, Malabar, Joyalukkas; Latest Prices</h3> </div> </article> </a> <a href="/news/gold-rate-today-rises-above-rs-1-42-lakh-ahead-of-fed-meet-check-latest-mcx-gold-silver-prices-26oct-1543363.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/gold-silver-17237926141-34571792994939.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/gold-silver-17237926141-34571792994939.jpg" alt="Gold Rate Today Rises Above Rs 1.42 Lakh Ahead of Fed Meet; Check Latest MCX Gold & Silver Prices" title="Gold Rate Today Rises Above Rs 1.42 Lakh Ahead of Fed Meet; Check Latest MCX Gold & Silver Prices" /> </picture> </div> <div class="gr-common-card__content"> <h3>Gold Rate Today Rises Above Rs 1.42 Lakh Ahead of Fed Meet; Check Latest MCX Gold & Silver Prices</h3> </div> </article> </a> <a href="/news/gold-rate-in-india-today-oct-26-24k-22k-gold-prices-recover-from-weekly-losses-check-prices-in-city-1543361.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/goldpricetoday12-68621792991396.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/goldpricetoday12-68621792991396.jpeg" alt="Gold Rate In India Today, Oct 26: 24k,22k Gold Prices Recover From Weekly Losses" title="Gold Rate In India Today, Oct 26: 24k,22k Gold Prices Recover From Weekly Losses" /> </picture> </div> <div class="gr-common-card__content"> <h3>Gold Rate In India Today, Oct 26: 24k,22k Gold Prices Recover From Weekly Losses</h3> </div> </article> </a> <a href="/news/gold-rates-today-26-10-2026-jump-rs-1700-in-chennai-hyderabad-mumbai-delhi-24k-22k-18k-gold-prices-1543359.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/goldratestodayintopcities-27441792990055.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/goldratestodayintopcities-27441792990055.jpg" alt="Gold Rates Today (26/10/2026) Jump Up To Rs 1,700 In Chennai, Cities; 24K, 22K, 18K Gold Prices Here" title="Gold Rates Today (26/10/2026) Jump Up To Rs 1,700 In Chennai, Cities; 24K, 22K, 18K Gold Prices Here" /> </picture> </div> <div class="gr-common-card__content"> <h3>Gold Rates Today (26/10/2026) Jump Up To Rs 1,700 In Chennai, Cities; 24K, 22K, 18K Gold Prices Here</h3> </div> </article> </a> </div> </div> <div class="gr-section-container gr-bor-bot"> <!--heading--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Silver Trends</h2> </div> <a href="https://www.goodreturns.in/topic/silver" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/news/silver-rate-in-india-crashes-by-1-90-000-from-peak-ahead-of-dhanteras-silver-prices-in-cities-buy-1543035.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/silverpricesinindia2-61931792744301.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/silverpricesinindia2-61931792744301.jpg" class="aspect-ratio-img" loading="lazy" alt="Silver Rate In India Crashes By 1,90,000 From Peak Ahead Of Dhanteras; Silver Prices In Cities, Buy?" title="Silver Rate In India Crashes By 1,90,000 From Peak Ahead Of Dhanteras; Silver Prices In Cities, Buy?" /> </picture> </div> <div class="gr-common-card__content"> <h3>Silver Rate In India Crashes By 1,90,000 From Peak Ahead Of Dhanteras; Silver Prices In Cities, Buy?</h3> </div> </article> </a> <a href="/news/silver-etfs-crash-4-as-india-approves-6-500-tonnes-of-imports-silver-prices-slide-nippon-india-t-1543029.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/silverbar-97121792742128.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/silverbar-97121792742128.jpg" class="aspect-ratio-img" loading="lazy" alt="Silver ETFs Crash 4% As India Approves 6,500 Tons Of Imports; Silver Prices Slide on Friday" title="Silver ETFs Crash 4% As India Approves 6,500 Tons Of Imports; Silver Prices Slide on Friday" /> </picture> </div> <div class="gr-common-card__content"> <h3>Silver ETFs Crash 4% As India Approves 6,500 Tons Of Imports; Silver Prices Slide on Friday</h3> </div> </article> </a> <a href="/wealth/markets/silver-rates-lowest-since-november-2025-why-ai-fears-are-hurting-silver-prices-more-fed-rate-hikes-1543023.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/silverratestoday-14271792739120.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/silverratestoday-14271792739120.jpg" class="aspect-ratio-img" loading="lazy" alt="Silver Rates Hit Lowest Since November 2025: Why AI Fears Are Hurting Prices More Than Fed Rate Hike" title="Silver Rates Hit Lowest Since November 2025: Why AI Fears Are Hurting Prices More Than Fed Rate Hike" /> </picture> </div> <div class="gr-common-card__content"> <h3>Silver Rates Hit Lowest Since November 2025: Why AI Fears Are Hurting Prices More Than Fed Rate Hike</h3> </div> </article> </a> <a href="/news/silver-rates-in-india-today-19-10-2026-unchanged-for-4th-day-in-row-why-silver-prices-under-pressure-1542405.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/silverratesinindiatoday-37841792385408.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/silverratesinindiatoday-37841792385408.jpg" class="aspect-ratio-img" loading="lazy" alt="Silver Rates In India Today (19.10.2026) Unchanged For 4th Day In Row: Why Silver Prices Are Weak?" title="Silver Rates In India Today (19.10.2026) Unchanged For 4th Day In Row: Why Silver Prices Are Weak?" /> </picture> </div> <div class="gr-common-card__content"> <h3>Silver Rates In India Today (19.10.2026) Unchanged For 4th Day In Row: Why Silver Prices Are Weak?</h3> </div> </article> </a> </div> </div> <!--International News--> <div class="gr-section-container gr-bor-bot"> <!--heading--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>International News</h2> </div> <a href="/topic/international-news" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/news/trump-diesel-order-red-dyed-fuel-rules-eased-amid-soaring-prices-what-changes-for-farmers-busines-1539417.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/donaldtrump1-10751791270564.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/donaldtrump1-10751791270564.jpg" class="aspect-ratio-img" loading="lazy" alt="Trump Diesel Order: Red-Dyed Fuel Rules Eased Amid Soaring Prices; Impact on Farmers & Businesses" title="Trump Diesel Order: Red-Dyed Fuel Rules Eased Amid Soaring Prices; Impact on Farmers & Businesses" /> </picture> </div> <div class="gr-common-card__content"> <h3>Trump Diesel Order: Red-Dyed Fuel Rules Eased Amid Soaring Prices; Impact on Farmers & Businesses</h3> </div> </article> </a> <a href="/news/china-us-trade-deal-us-china-trade-deal-30-billion-in-goods-get-tariff-relief-new-ai-dialogue-ag-1537503.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/china-ustradedeal12-54731790432252.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/china-ustradedeal12-54731790432252.jpeg" class="aspect-ratio-img" loading="lazy" alt="China-US Trade Deal: US-China Trade Deal: $30 Billion In Goods Get Tariff Relief; New AI Dialogue Ag" title="China-US Trade Deal: US-China Trade Deal: $30 Billion In Goods Get Tariff Relief; New AI Dialogue Ag" /> </picture> </div> <div class="gr-common-card__content"> <h3>China-US Trade Deal: US-China Trade Deal: $30 Billion In Goods Get Tariff Relief; New AI Dialogue Ag</h3> </div> </article> </a> <a href="/news/xi-jinping-and-donald-trump-summit-2026-why-chinese-ceos-missing-from-trade-talks-014-1536923.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/ap09-24-2026-000059b-jpg-1790223935813_1790223935258-1200x675.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/ap09-24-2026-000059b-jpg-1790223935813_1790223935258-1200x675.jpg" class="aspect-ratio-img" loading="lazy" alt="Trump-Xi Talks: China Skips CEO Delegation As Markets Watch Trade, AI And Iran Developments" title="Trump-Xi Talks: China Skips CEO Delegation As Markets Watch Trade, AI And Iran Developments" /> </picture> </div> <div class="gr-common-card__content"> <h3>Trump-Xi Talks: China Skips CEO Delegation As Markets Watch Trade, AI And Iran Developments</h3> </div> </article> </a> <a href="/wealth/nri-wealth/us-iran-war-recession-global-economy-india-crude-oil-prices-strait-of-hormuz-inflation-gdp-1536633.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/us-iran122-75061790143030.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/us-iran122-75061790143030.jpg" class="aspect-ratio-img" loading="lazy" alt="Is Recession Coming? US-Iran War Fuels Global Economic Fears" title="Is Recession Coming? US-Iran War Fuels Global Economic Fears" /> </picture> </div> <div class="gr-common-card__content"> <h3>Is Recession Coming? US-Iran War Fuels Global Economic Fears</h3> </div> </article> </a> </div> </div> <div class="gr-main-container"> <div class="left-section"> <!--Personal Finance--> <div class="gr-section-container"> <!--heading--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Personal Finance</h2> </div> <a href="/personal-finance/" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <!--common article wrapper--> <div class="gr-common-card-grid"> <a href="/personal-finance/kerala-lottery-bhagyathara-bt-76-draw-results-today-live-on-19-october-2026-check-winning-numbers-l-1542459.html"> <article class="gr-common-card" style="width: 302px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/keralalottery-73801792402763.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/keralalottery-73801792402763.jpg" class="aspect-ratio-img" loading="lazy"alt="Kerala Lottery Bhagyathara BT-76 Draw Results Today LIVE on 19 October 2026: Winning Numbers List" title="Kerala Lottery Bhagyathara BT-76 Draw Results Today LIVE on 19 October 2026: Winning Numbers List" /> </picture> </div> <div class="gr-common-card__content"> <h3>Kerala Lottery Bhagyathara BT-76 Draw Results Today LIVE on 19 October 2026: Winning Numbers List</h3> </div> </article> </a> <a href="/personal-finance/swiggy-share-price-outlook-after-crashes-16-to-52-week-low-icici-securities-keeps-buy-sees-127-upsid-1543323.html"> <article class="gr-common-card" style="width: 302px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/swiggy12001-83921792855237.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/swiggy12001-83921792855237.jpg" class="aspect-ratio-img" loading="lazy"alt="Swiggy Share Price Outlook After Crashes 16% To 52-Week Low; ICICI Securities Keeps Buy, Sees 127% U" title="Swiggy Share Price Outlook After Crashes 16% To 52-Week Low; ICICI Securities Keeps Buy, Sees 127% U" /> </picture> </div> <div class="gr-common-card__content"> <h3>Swiggy Share Price Outlook After Crashes 16% To 52-Week Low; ICICI Securities Keeps Buy, Sees 127% U</h3> </div> </article> </a> <a href="/personal-finance/1-5-stock-split-alert-this-engineering-stock-to-turn-1-share-into-5-check-record-date-and-other-de-1543055.html"> <article class="gr-common-card" style="width: 302px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/stock-split12002-27321792755957.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/stock-split12002-27321792755957.jpg" class="aspect-ratio-img" loading="lazy"alt="1:5 Stock Split Alert! This Engineering Stock to Turn 1 Share Into 5; Check Record Date" title="1:5 Stock Split Alert! This Engineering Stock to Turn 1 Share Into 5; Check Record Date" /> </picture> </div> <div class="gr-common-card__content"> <h3>1:5 Stock Split Alert! This Engineering Stock to Turn 1 Share Into 5; Check Record Date</h3> </div> </article> </a> <a href="/personal-finance/7th-pay-commission-da-hike-will-central-government-employees-get-3-increase-on-october-28-1543049.html"> <article class="gr-common-card" style="width: 302px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/da-hike12001-12951792754131.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/da-hike12001-12951792754131.jpg" class="aspect-ratio-img" loading="lazy"alt="7th Pay Commission DA Hike: Will Central Government Employees Get 3% Increase on October 28?" title="7th Pay Commission DA Hike: Will Central Government Employees Get 3% Increase on October 28?" /> </picture> </div> <div class="gr-common-card__content"> <h3>7th Pay Commission DA Hike: Will Central Government Employees Get 3% Increase on October 28?</h3> </div> </article> </a> </div> </div> </div> <div class="right-section"> </div> </div> <div class="gr-main-container"> <div class="left-section"> <!--IPO Insights--> <div class="gr-section-container"> <!--hedaing--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>IPO Insights</h2> </div> <a href="/topic/ipo" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <a href="/news/eaaa-india-alternatives-ipo-should-you-bet-on-this-rs-1-200-crore-issue-check-gmp-reviews-1543367.html"> <article class="top-headline-card-container"> <div class="top-headline-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/eaaaindiaalternativesipo12-61391792997009.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/eaaaindiaalternativesipo12-61391792997009.jpeg" alt="EAAA India Alternatives IPO: Should You Bet on This Rs. 1,200 Crore Issue? Check GMP & Reviews" title="EAAA India Alternatives IPO: Should You Bet on This Rs. 1,200 Crore Issue? Check GMP & Reviews" /> </picture> </div> <div class="top-headline-card__content"> <h3>EAAA India Alternatives IPO: Should You Bet on This Rs. 1,200 Crore Issue? Check GMP & Reviews</h3> </div> </article> </a> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/news/ipo-calendar-next-week-jio-platforms-listing-5-mainboard-ipos-worth-rs-2-636-crore-to-open-1543311.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/ipo51200-83851792841271.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/ipo51200-83851792841271.jpg" alt="IPO Calendar Next Week: Jio Platforms Listing, 5 Mainboard IPOs Worth Rs 2,636 Crore to Open" title="IPO Calendar Next Week: Jio Platforms Listing, 5 Mainboard IPOs Worth Rs 2,636 Crore to Open" /> </picture> </div> <div class="gr-common-card__content"> <h3>IPO Calendar Next Week: Jio Platforms Listing, 5 Mainboard IPOs Worth Rs 2,636 Crore to Open</h3> </div> </article> </a> <a href="/news/jio-ipo-day-3-live-issue-subscribed-5-94x-gmp-hints-at-22-gain-when-is-the-allotment-listing-1543013.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/jioipoday312-56521792731588.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/jioipoday312-56521792731588.jpeg" alt="Jio Platforms IPO Day 3 LIVE: Subscription Crosses 9x, QIB Portion Over 20x" title="Jio Platforms IPO Day 3 LIVE: Subscription Crosses 9x, QIB Portion Over 20x" /> </picture> </div> <div class="gr-common-card__content"> <h3>Jio Platforms IPO Day 3 LIVE: Subscription Crosses 9x, QIB Portion Over 20x</h3> </div> </article> </a> <a href="/news/transline-technologies-ipo-revenue-surges-over-3-times-in-2-years-profit-rises-check-ofs-details-1542993.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/ipo-16334333902-73571792668568.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/ipo-16334333902-73571792668568.jpg" alt="Transline Technologies IPO: Revenue Surges Over 3 Times In 2 Years, Profit Rises; Check OFS Details" title="Transline Technologies IPO: Revenue Surges Over 3 Times In 2 Years, Profit Rises; Check OFS Details" /> </picture> </div> <div class="gr-common-card__content"> <h3>Transline Technologies IPO: Revenue Surges Over 3 Times In 2 Years, Profit Rises; Check OFS Details</h3> </div> </article> </a> </div> </div> </div> <div class="right-section"> <!--IPO Radar--> </div> </div> <!--Smart Guides--> <div class="gr-main-container"> <div class="left-section"> <!--IPO Insights--> <div class="gr-section-container"> <!--hedaing--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Smart Guides</h2> </div> <a href="/classroom/" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <a href="/classroom/how-pensioners-can-get-digital-life-certificate-at-home-for-free-check-process-eligibility-and-rul-1543275.html"> <article class="top-headline-card-container"> <div class="top-headline-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/epfo1200-94061792834365.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/epfo1200-94061792834365.jpg" alt="How Pensioners Can Get Digital Life Certificate at Home for Free: Check Process, Eligibility & More" title="How Pensioners Can Get Digital Life Certificate at Home for Free: Check Process, Eligibility & More" /> </picture> </div> <div class="top-headline-card__content"> <h3>How Pensioners Can Get Digital Life Certificate at Home for Free: Check Process, Eligibility & More</h3> </div> </article> </a> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/classroom/pm-surya-ghar-yojana-delhi-free-rooftop-solar-panels-for-2-25-lakh-homes-how-to-register-1536479.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/pmsuryagharscheme1200-51141790078848.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/pmsuryagharscheme1200-51141790078848.jpeg" alt="PM Surya Ghar Yojana Delhi: Free Rooftop Solar Panels For 2.25 Lakh Homes, How To Register" title="PM Surya Ghar Yojana Delhi: Free Rooftop Solar Panels For 2.25 Lakh Homes, How To Register" /> </picture> </div> <div class="gr-common-card__content"> <h3>PM Surya Ghar Yojana Delhi: Free Rooftop Solar Panels For 2.25 Lakh Homes, How To Register</h3> </div> </article> </a> <a href="/classroom/subhadra-yojana-instalment-released-in-odisha-how-to-check-status-1531603.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/08/ladkibahinyojana125-26831788084771.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/08/ladkibahinyojana125-26831788084771.jpg" alt="Subhadra Yojana Instalment Released in Odisha! How To Check Status?" title="Subhadra Yojana Instalment Released in Odisha! How To Check Status?" /> </picture> </div> <div class="gr-common-card__content"> <h3>Subhadra Yojana Instalment Released in Odisha! How To Check Status?</h3> </div> </article> </a> <a href="/classroom/how-to-change-name-on-bescom-electricity-bill-online-in-bengaluru-step-by-step-guide-documents-fe-1531313.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/08/bescom12-95511787902114.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/08/bescom12-95511787902114.jpeg" alt="How To Change Name On BESCOM Electricity Bill Online In Bengaluru: Step-By-Step Guide, Documents" title="How To Change Name On BESCOM Electricity Bill Online In Bengaluru: Step-By-Step Guide, Documents" /> </picture> </div> <div class="gr-common-card__content"> <h3>How To Change Name On BESCOM Electricity Bill Online In Bengaluru: Step-By-Step Guide, Documents</h3> </div> </article> </a> </div> </div> </div> <div class="right-section"> <div id="oneindia_mobile_polls_container"></div> </div> </div> <div class="gr-main-container"> <div class="left-section"> <!--Stocks--> <div class="gr-section-container"> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Stocks</h2> </div> <a href="/topic/stocks" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <a href="/lw/wealth/markets/nifty-sensex-today-fii-outflows-40-billion-foreign-investors-indian-stocks-1537923.html"> <article class="top-headline-card-container"> <div class="top-headline-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/bse-nse12-11271790659721.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/bse-nse12-11271790659721.jpg" alt="$40 Billion FII Exit in 2 Years: Why Foreign Investors Are Turning Away From Indian Stocks" title="$40 Billion FII Exit in 2 Years: Why Foreign Investors Are Turning Away From Indian Stocks" /> </picture> </div> <div class="top-headline-card__content"> <h3>$40 Billion FII Exit in 2 Years: Why Foreign Investors Are Turning Away From Indian Stocks</h3> </div> </article> </a> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/wealth/markets/nifty-sensex-today-fii-outflows-40-billion-foreign-investors-indian-stocks-1537921.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/bse-nse12-11271790659721.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/bse-nse12-11271790659721.jpg" alt="$40 Billion FII Exit in 2 Years: Why Foreign Investors Are Turning Away From Indian Stocks" title="$40 Billion FII Exit in 2 Years: Why Foreign Investors Are Turning Away From Indian Stocks" /> </picture> </div> <div class="gr-common-card__content"> <h3>$40 Billion FII Exit in 2 Years: Why Foreign Investors Are Turning Away From Indian Stocks</h3> </div> </article> </a> <a href="/news/1-1-bonus-issues-rs-8-35-dividends-spinoff-rights-issue-next-week-natco-igl-sail-7-other-stocks-1537431.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/bonusdividendsrightsissuespinoffs-82501790401192.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/bonusdividendsrightsissuespinoffs-82501790401192.jpg" alt="1:1 Bonus Issues + Rs 8.35 Dividends + 1:5 Spinoff + 2:21 Rights Issue: 10 Stocks Ex-Date Next Week" title="1:1 Bonus Issues + Rs 8.35 Dividends + 1:5 Spinoff + 2:21 Rights Issue: 10 Stocks Ex-Date Next Week" /> </picture> </div> <div class="gr-common-card__content"> <h3>1:1 Bonus Issues + Rs 8.35 Dividends + 1:5 Spinoff + 2:21 Rights Issue: 10 Stocks Ex-Date Next Week</h3> </div> </article> </a> <a href="/lw/wealth/what-the-new-foreign-investment-reforms-mean-for-stocks-and-retail-investors-1526127.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/08/fii12-64981785745704.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/08/fii12-64981785745704.jpg" alt="What The New Foreign Investment Reforms Mean For Stocks And Retail Investors" title="What The New Foreign Investment Reforms Mean For Stocks And Retail Investors" /> </picture> </div> <div class="gr-common-card__content"> <h3>What The New Foreign Investment Reforms Mean For Stocks And Retail Investors</h3> </div> </article> </a> </div> </div> </div> <div class="right-section"> <!--IPO Radar--> </div> </div> <div class="gr-section-container gr-bor-bot"> <!--heading--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2 class="gr-common-heading__title">Markets Dashboard</h2> </div> </div> <div class="gr-market-grid"> <!--Markets Dashboard--> <div class="gr-section-container"> </div> <!--Gainers and Losers--> <div class="gr-section-container"> </div> <!--Currency Rates--> <div class="gr-section-container"> </div> </div> </div> <div class="gr-main-container" > <div class="left-section"> <!--Stocks--> <div class="gr-section-container"> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Mutual Funds</h2> </div> <a href="/mutual-funds/" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <a href="/personal-finance/market-down-for-8-weeks-in-a-row-should-you-stop-your-sip-continue-or-invest-more-expert-explains-1538757.html"> <article class="top-headline-card-container"> <div class="top-headline-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/sipstrategy6-50361790886574.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/sipstrategy6-50361790886574.jpeg" alt="Market Down for 8 Weeks in a Row: Should You Stop Your SIP, Continue or Invest More? Expert Explains" title="Market Down for 8 Weeks in a Row: Should You Stop Your SIP, Continue or Invest More? Expert Explains" /> </picture> </div> <div class="top-headline-card__content"> <h3>Market Down for 8 Weeks in a Row: Should You Stop Your SIP, Continue or Invest More? Expert Explains</h3> </div> </article> </a> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/in-the-news/midasx-mf-utilities-bring-ai-wealth-tech-to-mfds-across-bharat-1532273.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/mf12-14041788333158.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/mf12-14041788333158.jpg" alt="MIDASX, MF Utilities Bring AI Wealth Tech To MFDs Across Bharat" title="MIDASX, MF Utilities Bring AI Wealth Tech To MFDs Across Bharat" /> </picture> </div> <div class="gr-common-card__content"> <h3>MIDASX, MF Utilities Bring AI Wealth Tech To MFDs Across Bharat</h3> </div> </article> </a> <a href="/personal-finance/ncdex-next-gen-mutual-fund-transaction-platform-nidhi-farmers-to-fpos-eligibility-features-benefits-1525223.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/07/mutualfundncdexnidhi-76691785393984.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/07/mutualfundncdexnidhi-76691785393984.jpg" alt="NCDEX Launches Next-Gen Mutual Fund Transaction Platform &#39;Nidhi&#39; For Farmers To FPOs: Key Features" title="NCDEX Launches Next-Gen Mutual Fund Transaction Platform &#39;Nidhi&#39; For Farmers To FPOs: Key Features" /> </picture> </div> <div class="gr-common-card__content"> <h3>NCDEX Launches Next-Gen Mutual Fund Transaction Platform &#39;Nidhi&#39; For Farmers To FPOs: Key Features</h3> </div> </article> </a> <a href="/personal-finance/best-liquid-fund-for-short-term-savings-axis-liquid-fund-vs-nippon-india-liquid-fund-comparison-1518237.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/06/mutual-fund121-1782406725.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/06/mutual-fund121-1782406725.jpg" alt="Best Liquid Fund for Short-Term Savings: Axis Liquid Fund vs Nippon India Liquid Fund Comparison" title="Best Liquid Fund for Short-Term Savings: Axis Liquid Fund vs Nippon India Liquid Fund Comparison" /> </picture> </div> <div class="gr-common-card__content"> <h3>Best Liquid Fund for Short-Term Savings: Axis Liquid Fund vs Nippon India Liquid Fund Comparison</h3> </div> </article> </a> </div> </div> </div> <div class="right-section"> </div> </div> <!--Videos--> <div class="gr-section-container gr-bor-bot" style="padding-bottom: 40px;border-bottom:0 none!important;"> <!--heading--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Videos</h2> </div> <!--<a href="/videos/" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a>--> </div> <!--videos container--> <div class="videos-container"> <div class="videos-grid" id="videos"> </div> <div class="video-nav-wrapper"> <button class="video-nav-btn prev" aria-label="Previous"> <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="m15 18-6-6 6-6"></path> </svg> </button> <button class="video-nav-btn next" aria-label="Next"> <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="m9 18 6-6-6-6"></path> </svg> </button> </div> </div> </div> </div> <!--Footer--> <!--Footer--> <footer class="gr-footer"> <div class="footer-grid db-footer-section"> <!-- Logo + About --> <div class="footer-about"> <img src="https://images.goodreturns.in/images/goodreturns-logo-1768890557200.svg" alt="GoodReturns" class="footer-logo light-logo"> <img src="https://images.goodreturns.in/images/goodreturns-white-logo-1768890607572.svg" alt="GoodReturns" class="footer-logo dark-logo"> <p class="footer-desc">
+							</button> </a> </div> </div> <div class="right-section"> <!--AD WRAPPER--> <div class="ad-wrapper"> <div class="ad-box"> <div id="are-slot-mr1" class="oiad oi-axt oiadv" style="min-height:250px!important;padding:0!important;margin:0!important"></div> </div> </div> </div> </div> <!--<div class="gr-section-container gr-bor-bot"> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Editor's Picks</h2> </div> <a href="/topic/editors-picks/" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <div class="gr-common-card-wrapper"> <a href="/wealth/nri-wealth/81-years-after-little-boy-hit-hiroshima-why-the-world-no-longer-fears-war-1526653.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/08/ww60-28101785996122.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/08/ww60-28101785996122.jpg" alt="81 Years After ‘Little Boy’: Why War Feels Normal" title="81 Years After ‘Little Boy’: Why War Feels Normal" /> </picture> </div> <div class="gr-common-card__content"> <h3>81 Years After ‘Little Boy’: Why War Feels Normal</h3> </div> </article> </a> <a href="/wealth/markets/how-to-buy-us-stocks-via-gift-city-india-guide-2026-apple-nvidia-microsoft-explained-1524667.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/07/us12-90491785217966.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/07/us12-90491785217966.jpg" alt="How To Buy US Stocks Via GIFT City" title="How To Buy US Stocks Via GIFT City" /> </picture> </div> <div class="gr-common-card__content"> <h3>How To Buy US Stocks Via GIFT City</h3> </div> </article> </a> <a href="/wealth/nri-wealth/9-carat-gold-explained-is-it-better-than-22k-24k-and-18k-gold-for-jewellery-buyers-1524529.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/07/gold62-91631785150260.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/07/gold62-91631785150260.jpg" alt="9 Carat Gold Explained" title="9 Carat Gold Explained" /> </picture> </div> <div class="gr-common-card__content"> <h3>9 Carat Gold Explained</h3> </div> </article> </a> <a href="/wealth/markets/wall-street-great-divergence-us-stock-market-margin-debt-leverage-risks-s-p-500-dow-outlook-1524505.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/07/stock121-74041785143549.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/07/stock121-74041785143549.jpg" alt="Wall Street Running On Fumes: The Great Divergence" title="Wall Street Running On Fumes: The Great Divergence" /> </picture> </div> <div class="gr-common-card__content"> <h3>Wall Street Running On Fumes: The Great Divergence</h3> </div> </article> </a> </div> </div>--> <section> <div class="gr-section-container gr-bor-bot"> <div class="gr-wealth-widget" aria-label="Wealth"> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2 class="gr-wealth-widget-title"><span>Wealth</span> <svg class="gr-wealth-widget-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="https://www.w3.org/2000/svg"> <path d="M10 20C15.5228 20 20 15.5228 20 10C20 4.47715 15.5228 0 10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20Z" fill="#159B5A"/> <path d="M7.83805 10.6775L7.19849 11.2816L5.28075 13.0934L3.78128 14.5013C3.52639 14.7408 3.10951 14.6531 2.8873 14.414C2.65949 14.1685 2.64221 13.7437 2.89524 13.5023L4.80318 11.6789L6.69291 9.88064L7.71527 8.9031C7.84085 8.78312 7.98137 8.7187 8.15503 8.71823C8.34176 8.71823 8.50515 8.78125 8.63773 8.91617L10.0732 10.2583L10.7529 10.8871L14.8541 6.948L14.186 6.75567L13.208 6.47324C12.8551 6.39061 12.6716 6.02368 12.8075 5.69316C12.898 5.47282 13.0964 5.35891 13.3355 5.35938L16.8656 5.36778C17.086 5.36825 17.2778 5.59233 17.2778 5.80707L17.276 9.3802C17.276 9.52445 17.2251 9.63275 17.1336 9.73546C17.0309 9.8503 16.8936 9.91052 16.741 9.91005C16.4623 9.91005 16.2714 9.73219 16.2032 9.47263L15.8087 7.97177L15.1075 8.63187L14.0002 9.68177L11.2543 12.3105C11.0078 12.5462 10.6129 12.6293 10.3449 12.381L8.68348 10.8418L8.17463 10.3689L7.83805 10.6775Z" fill="#FCFDFD"/> </svg></h2> </div> <a href="/wealth/" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"> <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <div class="gr-wealth-widget-grid"> <a class="gr-wealth-widget-card" href="/wealth/companies/rs-49-03-40-00-00-000-why-mukesh-ambanis-jio-ipo-has-everyone-talking-1543269.html"> <div class="gr-wealth-widget-thumb"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/jioipo2-87661792828795.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/jioipo2-87661792828795.jpg" alt="Rs 49,03,40,00,00,000: Why Mukesh Ambani&#39;s Jio IPO Has Everyone Talking" title="Rs 49,03,40,00,00,000: Why Mukesh Ambani&#39;s Jio IPO Has Everyone Talking" /> </picture> </div> <div class="gr-wealth-widget-headline">Rs 49,03,40,00,00,000: Why Mukesh Ambani&#39;s Jio IPO Has Everyone Talking</div> </a> <a class="gr-wealth-widget-card" href="/wealth/markets/silver-rates-lowest-since-november-2025-why-ai-fears-are-hurting-silver-prices-more-fed-rate-hikes-1543023.html"> <div class="gr-wealth-widget-thumb"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/silverratestoday-14271792739120.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/silverratestoday-14271792739120.jpg" alt="Silver Rates Hit Lowest Since November 2025: Why AI Fears Are Hurting Prices More Than Fed Rate Hike" title="Silver Rates Hit Lowest Since November 2025: Why AI Fears Are Hurting Prices More Than Fed Rate Hike" /> </picture> </div> <div class="gr-wealth-widget-headline">Silver Rates Hit Lowest Since November 2025: Why AI Fears Are Hurting Prices More Than Fed Rate Hike</div> </a> <a class="gr-wealth-widget-card" href="/wealth/companies/jio-ipo-jackpot-from-first-reliance-ipo-to-ipo-of-century-can-ambani-beat-tata-at-scale-and-airtel-1541963.html"> <div class="gr-wealth-widget-thumb"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/jioplatformsipo-46611792140282.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/jioplatformsipo-46611792140282.jpg" alt="From First Reliance IPO To IPO Of Century: Can Ambani Beat Tata at Scale and Airtel at Telecom?" title="From First Reliance IPO To IPO Of Century: Can Ambani Beat Tata at Scale and Airtel at Telecom?" /> </picture> </div> <div class="gr-wealth-widget-headline">From First Reliance IPO To IPO Of Century: Can Ambani Beat Tata at Scale and Airtel at Telecom?</div> </a> <a class="gr-wealth-widget-card" href="/wealth/companies/us-h1-b-visa-green-card-freeze-tcs-infosys-cognizant-wipro-5-points-indian-tech-employees-to-know-1540307.html"> <div class="gr-wealth-widget-thumb"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/usgreencardsuspension-29831791528371.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/usgreencardsuspension-29831791528371.jpg" alt="US H1-B Visa Green Card Freeze: 5 Things Indian Tech Employees Need To Know" title="US H1-B Visa Green Card Freeze: 5 Things Indian Tech Employees Need To Know" /> </picture> </div> <div class="gr-wealth-widget-headline">US H1-B Visa Green Card Freeze: 5 Things Indian Tech Employees Need To Know</div> </a> </div> </div> </div> </div> </section> <!--Gold Trends--> <div class="gr-section-container gr-bor-bot"> <!--heading--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Gold Trends</h2> </div> <a href="/topic/gold" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/news/rs-17-10-00-000-gold-jhumkas-of-16-51-kg-joyalukkas-breaks-2-guinness-world-records-dubai-gold-rates-1543383.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/101-36891793006234.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/101-36891793006234.jpg" alt="Rs 17,10,00,000 Jhumkas Of 16.51 Kg: Joyalukkas Breaks 2 Guinness World Records; Dubai Gold Rates" title="Rs 17,10,00,000 Jhumkas Of 16.51 Kg: Joyalukkas Breaks 2 Guinness World Records; Dubai Gold Rates" /> </picture> </div> <div class="gr-common-card__content"> <h3>Rs 17,10,00,000 Jhumkas Of 16.51 Kg: Joyalukkas Breaks 2 Guinness World Records; Dubai Gold Rates</h3> </div> </article> </a> <a href="/news/gold-rates-today-26-10-2026-22k-gold-rises-rs-1500-at-ibja-malabar-joyalukkas-24k-22k-18k-gold-price-1543373.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/goldratestanishqibjamalabar-22151793000657.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/goldratestanishqibjamalabar-22151793000657.jpg" alt="Gold Rates Today, 26.10.2026: 22K Gold Rises Rs 1,500 At , IBJA, Malabar, Joyalukkas; Latest Prices" title="Gold Rates Today, 26.10.2026: 22K Gold Rises Rs 1,500 At , IBJA, Malabar, Joyalukkas; Latest Prices" /> </picture> </div> <div class="gr-common-card__content"> <h3>Gold Rates Today, 26.10.2026: 22K Gold Rises Rs 1,500 At , IBJA, Malabar, Joyalukkas; Latest Prices</h3> </div> </article> </a> <a href="/news/gold-rate-today-rises-above-rs-1-42-lakh-ahead-of-fed-meet-check-latest-mcx-gold-silver-prices-26oct-1543363.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/gold-silver-17237926141-34571792994939.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/gold-silver-17237926141-34571792994939.jpg" alt="Gold Rate Today Rises Above Rs 1.42 Lakh Ahead of Fed Meet; Check Latest MCX Gold & Silver Prices" title="Gold Rate Today Rises Above Rs 1.42 Lakh Ahead of Fed Meet; Check Latest MCX Gold & Silver Prices" /> </picture> </div> <div class="gr-common-card__content"> <h3>Gold Rate Today Rises Above Rs 1.42 Lakh Ahead of Fed Meet; Check Latest MCX Gold & Silver Prices</h3> </div> </article> </a> <a href="/news/gold-rate-in-india-today-oct-26-24k-22k-gold-prices-recover-from-weekly-losses-check-prices-in-city-1543361.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/goldpricetoday12-68621792991396.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/goldpricetoday12-68621792991396.jpeg" alt="Gold Rate In India Today, Oct 26: 24k,22k Gold Prices Recover From Weekly Losses" title="Gold Rate In India Today, Oct 26: 24k,22k Gold Prices Recover From Weekly Losses" /> </picture> </div> <div class="gr-common-card__content"> <h3>Gold Rate In India Today, Oct 26: 24k,22k Gold Prices Recover From Weekly Losses</h3> </div> </article> </a> </div> </div> <div class="gr-section-container gr-bor-bot"> <!--heading--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Silver Trends</h2> </div> <a href="https://www.goodreturns.in/topic/silver" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/news/silver-rate-in-india-crashes-by-1-90-000-from-peak-ahead-of-dhanteras-silver-prices-in-cities-buy-1543035.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/silverpricesinindia2-61931792744301.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/silverpricesinindia2-61931792744301.jpg" class="aspect-ratio-img" loading="lazy" alt="Silver Rate In India Crashes By 1,90,000 From Peak Ahead Of Dhanteras; Silver Prices In Cities, Buy?" title="Silver Rate In India Crashes By 1,90,000 From Peak Ahead Of Dhanteras; Silver Prices In Cities, Buy?" /> </picture> </div> <div class="gr-common-card__content"> <h3>Silver Rate In India Crashes By 1,90,000 From Peak Ahead Of Dhanteras; Silver Prices In Cities, Buy?</h3> </div> </article> </a> <a href="/news/silver-etfs-crash-4-as-india-approves-6-500-tonnes-of-imports-silver-prices-slide-nippon-india-t-1543029.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/silverbar-97121792742128.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/silverbar-97121792742128.jpg" class="aspect-ratio-img" loading="lazy" alt="Silver ETFs Crash 4% As India Approves 6,500 Tons Of Imports; Silver Prices Slide on Friday" title="Silver ETFs Crash 4% As India Approves 6,500 Tons Of Imports; Silver Prices Slide on Friday" /> </picture> </div> <div class="gr-common-card__content"> <h3>Silver ETFs Crash 4% As India Approves 6,500 Tons Of Imports; Silver Prices Slide on Friday</h3> </div> </article> </a> <a href="/wealth/markets/silver-rates-lowest-since-november-2025-why-ai-fears-are-hurting-silver-prices-more-fed-rate-hikes-1543023.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/silverratestoday-14271792739120.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/silverratestoday-14271792739120.jpg" class="aspect-ratio-img" loading="lazy" alt="Silver Rates Hit Lowest Since November 2025: Why AI Fears Are Hurting Prices More Than Fed Rate Hike" title="Silver Rates Hit Lowest Since November 2025: Why AI Fears Are Hurting Prices More Than Fed Rate Hike" /> </picture> </div> <div class="gr-common-card__content"> <h3>Silver Rates Hit Lowest Since November 2025: Why AI Fears Are Hurting Prices More Than Fed Rate Hike</h3> </div> </article> </a> <a href="/news/silver-rates-in-india-today-19-10-2026-unchanged-for-4th-day-in-row-why-silver-prices-under-pressure-1542405.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/silverratesinindiatoday-37841792385408.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/silverratesinindiatoday-37841792385408.jpg" class="aspect-ratio-img" loading="lazy" alt="Silver Rates In India Today (19.10.2026) Unchanged For 4th Day In Row: Why Silver Prices Are Weak?" title="Silver Rates In India Today (19.10.2026) Unchanged For 4th Day In Row: Why Silver Prices Are Weak?" /> </picture> </div> <div class="gr-common-card__content"> <h3>Silver Rates In India Today (19.10.2026) Unchanged For 4th Day In Row: Why Silver Prices Are Weak?</h3> </div> </article> </a> </div> </div> <!--International News--> <div class="gr-section-container gr-bor-bot"> <!--heading--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>International News</h2> </div> <a href="/topic/international-news" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/news/trump-diesel-order-red-dyed-fuel-rules-eased-amid-soaring-prices-what-changes-for-farmers-busines-1539417.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/donaldtrump1-10751791270564.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/donaldtrump1-10751791270564.jpg" class="aspect-ratio-img" loading="lazy" alt="Trump Diesel Order: Red-Dyed Fuel Rules Eased Amid Soaring Prices; Impact on Farmers & Businesses" title="Trump Diesel Order: Red-Dyed Fuel Rules Eased Amid Soaring Prices; Impact on Farmers & Businesses" /> </picture> </div> <div class="gr-common-card__content"> <h3>Trump Diesel Order: Red-Dyed Fuel Rules Eased Amid Soaring Prices; Impact on Farmers & Businesses</h3> </div> </article> </a> <a href="/news/china-us-trade-deal-us-china-trade-deal-30-billion-in-goods-get-tariff-relief-new-ai-dialogue-ag-1537503.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/china-ustradedeal12-54731790432252.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/china-ustradedeal12-54731790432252.jpeg" class="aspect-ratio-img" loading="lazy" alt="China-US Trade Deal: US-China Trade Deal: $30 Billion In Goods Get Tariff Relief; New AI Dialogue Ag" title="China-US Trade Deal: US-China Trade Deal: $30 Billion In Goods Get Tariff Relief; New AI Dialogue Ag" /> </picture> </div> <div class="gr-common-card__content"> <h3>China-US Trade Deal: US-China Trade Deal: $30 Billion In Goods Get Tariff Relief; New AI Dialogue Ag</h3> </div> </article> </a> <a href="/news/xi-jinping-and-donald-trump-summit-2026-why-chinese-ceos-missing-from-trade-talks-014-1536923.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/ap09-24-2026-000059b-jpg-1790223935813_1790223935258-1200x675.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/ap09-24-2026-000059b-jpg-1790223935813_1790223935258-1200x675.jpg" class="aspect-ratio-img" loading="lazy" alt="Trump-Xi Talks: China Skips CEO Delegation As Markets Watch Trade, AI And Iran Developments" title="Trump-Xi Talks: China Skips CEO Delegation As Markets Watch Trade, AI And Iran Developments" /> </picture> </div> <div class="gr-common-card__content"> <h3>Trump-Xi Talks: China Skips CEO Delegation As Markets Watch Trade, AI And Iran Developments</h3> </div> </article> </a> <a href="/wealth/nri-wealth/us-iran-war-recession-global-economy-india-crude-oil-prices-strait-of-hormuz-inflation-gdp-1536633.html"> <article class="gr-common-card" style="width: 222px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/us-iran122-75061790143030.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/us-iran122-75061790143030.jpg" class="aspect-ratio-img" loading="lazy" alt="Is Recession Coming? US-Iran War Fuels Global Economic Fears" title="Is Recession Coming? US-Iran War Fuels Global Economic Fears" /> </picture> </div> <div class="gr-common-card__content"> <h3>Is Recession Coming? US-Iran War Fuels Global Economic Fears</h3> </div> </article> </a> </div> </div> <div class="gr-main-container"> <div class="left-section"> <!--Personal Finance--> <div class="gr-section-container"> <!--heading--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Personal Finance</h2> </div> <a href="/personal-finance/" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <!--common article wrapper--> <div class="gr-common-card-grid"> <a href="/personal-finance/kerala-lottery-bhagyathara-bt-76-draw-results-today-live-on-19-october-2026-check-winning-numbers-l-1542459.html"> <article class="gr-common-card" style="width: 302px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/keralalottery-73801792402763.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/keralalottery-73801792402763.jpg" class="aspect-ratio-img" loading="lazy"alt="Kerala Lottery Bhagyathara BT-76 Draw Results Today LIVE on 19 October 2026: Winning Numbers List" title="Kerala Lottery Bhagyathara BT-76 Draw Results Today LIVE on 19 October 2026: Winning Numbers List" /> </picture> </div> <div class="gr-common-card__content"> <h3>Kerala Lottery Bhagyathara BT-76 Draw Results Today LIVE on 19 October 2026: Winning Numbers List</h3> </div> </article> </a> <a href="/personal-finance/kerala-lottery-result-today-26-october-2026-bhagyathara-bt-77-draw-live-check-winners-list-for-rs1cr-1543381.html"> <article class="gr-common-card" style="width: 302px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/bhagyatharabtkeralalottery-71041793006153.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/bhagyatharabtkeralalottery-71041793006153.jpg" class="aspect-ratio-img" loading="lazy"alt="Kerala Lottery Result Today, 26 October 2026, Bhagyathara BT-77 Draw LIVE: Winners List for Rs 1 Cr" title="Kerala Lottery Result Today, 26 October 2026, Bhagyathara BT-77 Draw LIVE: Winners List for Rs 1 Cr" /> </picture> </div> <div class="gr-common-card__content"> <h3>Kerala Lottery Result Today, 26 October 2026, Bhagyathara BT-77 Draw LIVE: Winners List for Rs 1 Cr</h3> </div> </article> </a> <a href="/personal-finance/kerala-lottery-samrudhi-sm-78-result-today-25-october-2026-live-check-winning-numbers-winners-ful-1543337.html"> <article class="gr-common-card" style="width: 302px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/keralalottery-12901792918407.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/keralalottery-12901792918407.jpg" class="aspect-ratio-img" loading="lazy"alt="Kerala Lottery Samrudhi SM-78 Result Today, 25 October 2026 LIVE: Check Winning Numbers Full List" title="Kerala Lottery Samrudhi SM-78 Result Today, 25 October 2026 LIVE: Check Winning Numbers Full List" /> </picture> </div> <div class="gr-common-card__content"> <h3>Kerala Lottery Samrudhi SM-78 Result Today, 25 October 2026 LIVE: Check Winning Numbers Full List</h3> </div> </article> </a> <a href="/personal-finance/swiggy-share-price-outlook-after-crashes-16-to-52-week-low-icici-securities-keeps-buy-sees-127-upsid-1543323.html"> <article class="gr-common-card" style="width: 302px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/swiggy12001-83921792855237.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/swiggy12001-83921792855237.jpg" class="aspect-ratio-img" loading="lazy"alt="Swiggy Share Price Outlook After Crashes 16% To 52-Week Low; ICICI Securities Keeps Buy, Sees 127% U" title="Swiggy Share Price Outlook After Crashes 16% To 52-Week Low; ICICI Securities Keeps Buy, Sees 127% U" /> </picture> </div> <div class="gr-common-card__content"> <h3>Swiggy Share Price Outlook After Crashes 16% To 52-Week Low; ICICI Securities Keeps Buy, Sees 127% U</h3> </div> </article> </a> </div> </div> </div> <div class="right-section"> </div> </div> <div class="gr-main-container"> <div class="left-section"> <!--IPO Insights--> <div class="gr-section-container"> <!--hedaing--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>IPO Insights</h2> </div> <a href="/topic/ipo" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <a href="/news/2-ipos-open-tomorrow-bls-polymers-vs-sfc-environmental-technologies-which-has-higher-gmp-1543387.html"> <article class="top-headline-card-container"> <div class="top-headline-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/blspolymersvssfcenvironmentaltechnologies12-24521793010162.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/blspolymersvssfcenvironmentaltechnologies12-24521793010162.jpeg" alt="2 IPOs Open Tomorrow: BLS Polymers vs SFC Environmental Technologies; Which Has Higher GMP?" title="2 IPOs Open Tomorrow: BLS Polymers vs SFC Environmental Technologies; Which Has Higher GMP?" /> </picture> </div> <div class="top-headline-card__content"> <h3>2 IPOs Open Tomorrow: BLS Polymers vs SFC Environmental Technologies; Which Has Higher GMP?</h3> </div> </article> </a> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/news/eaaa-india-alternatives-ipo-should-you-bet-on-this-rs-1-200-crore-issue-check-gmp-reviews-1543367.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/eaaaindiaalternativesipo12-61391792997009.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/eaaaindiaalternativesipo12-61391792997009.jpeg" alt="EAAA India Alternatives IPO: Should You Bet on This Rs. 1,200 Crore Issue? Check GMP & Reviews" title="EAAA India Alternatives IPO: Should You Bet on This Rs. 1,200 Crore Issue? Check GMP & Reviews" /> </picture> </div> <div class="gr-common-card__content"> <h3>EAAA India Alternatives IPO: Should You Bet on This Rs. 1,200 Crore Issue? Check GMP & Reviews</h3> </div> </article> </a> <a href="/news/ipo-calendar-next-week-jio-platforms-listing-5-mainboard-ipos-worth-rs-2-636-crore-to-open-1543311.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/ipo51200-83851792841271.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/ipo51200-83851792841271.jpg" alt="IPO Calendar Next Week: Jio Platforms Listing, 5 Mainboard IPOs Worth Rs 2,636 Crore to Open" title="IPO Calendar Next Week: Jio Platforms Listing, 5 Mainboard IPOs Worth Rs 2,636 Crore to Open" /> </picture> </div> <div class="gr-common-card__content"> <h3>IPO Calendar Next Week: Jio Platforms Listing, 5 Mainboard IPOs Worth Rs 2,636 Crore to Open</h3> </div> </article> </a> <a href="/news/jio-ipo-day-3-live-issue-subscribed-5-94x-gmp-hints-at-22-gain-when-is-the-allotment-listing-1543013.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/jioipoday312-56521792731588.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/jioipoday312-56521792731588.jpeg" alt="Jio Platforms IPO Day 3 LIVE: Subscription Crosses 9x, QIB Portion Over 20x" title="Jio Platforms IPO Day 3 LIVE: Subscription Crosses 9x, QIB Portion Over 20x" /> </picture> </div> <div class="gr-common-card__content"> <h3>Jio Platforms IPO Day 3 LIVE: Subscription Crosses 9x, QIB Portion Over 20x</h3> </div> </article> </a> </div> </div> </div> <div class="right-section"> <!--IPO Radar--> </div> </div> <!--Smart Guides--> <div class="gr-main-container"> <div class="left-section"> <!--IPO Insights--> <div class="gr-section-container"> <!--hedaing--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Smart Guides</h2> </div> <a href="/classroom/" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <a href="/classroom/how-pensioners-can-get-digital-life-certificate-at-home-for-free-check-process-eligibility-and-rul-1543275.html"> <article class="top-headline-card-container"> <div class="top-headline-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/epfo1200-94061792834365.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/epfo1200-94061792834365.jpg" alt="How Pensioners Can Get Digital Life Certificate at Home for Free: Check Process, Eligibility & More" title="How Pensioners Can Get Digital Life Certificate at Home for Free: Check Process, Eligibility & More" /> </picture> </div> <div class="top-headline-card__content"> <h3>How Pensioners Can Get Digital Life Certificate at Home for Free: Check Process, Eligibility & More</h3> </div> </article> </a> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/classroom/pm-surya-ghar-yojana-delhi-free-rooftop-solar-panels-for-2-25-lakh-homes-how-to-register-1536479.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/pmsuryagharscheme1200-51141790078848.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/pmsuryagharscheme1200-51141790078848.jpeg" alt="PM Surya Ghar Yojana Delhi: Free Rooftop Solar Panels For 2.25 Lakh Homes, How To Register" title="PM Surya Ghar Yojana Delhi: Free Rooftop Solar Panels For 2.25 Lakh Homes, How To Register" /> </picture> </div> <div class="gr-common-card__content"> <h3>PM Surya Ghar Yojana Delhi: Free Rooftop Solar Panels For 2.25 Lakh Homes, How To Register</h3> </div> </article> </a> <a href="/classroom/subhadra-yojana-instalment-released-in-odisha-how-to-check-status-1531603.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/08/ladkibahinyojana125-26831788084771.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/08/ladkibahinyojana125-26831788084771.jpg" alt="Subhadra Yojana Instalment Released in Odisha! How To Check Status?" title="Subhadra Yojana Instalment Released in Odisha! How To Check Status?" /> </picture> </div> <div class="gr-common-card__content"> <h3>Subhadra Yojana Instalment Released in Odisha! How To Check Status?</h3> </div> </article> </a> <a href="/classroom/how-to-change-name-on-bescom-electricity-bill-online-in-bengaluru-step-by-step-guide-documents-fe-1531313.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/08/bescom12-95511787902114.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/08/bescom12-95511787902114.jpeg" alt="How To Change Name On BESCOM Electricity Bill Online In Bengaluru: Step-By-Step Guide, Documents" title="How To Change Name On BESCOM Electricity Bill Online In Bengaluru: Step-By-Step Guide, Documents" /> </picture> </div> <div class="gr-common-card__content"> <h3>How To Change Name On BESCOM Electricity Bill Online In Bengaluru: Step-By-Step Guide, Documents</h3> </div> </article> </a> </div> </div> </div> <div class="right-section"> <div id="oneindia_mobile_polls_container"></div> </div> </div> <div class="gr-main-container"> <div class="left-section"> <!--Stocks--> <div class="gr-section-container"> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Stocks</h2> </div> <a href="/topic/stocks" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <a href="/lw/wealth/markets/nifty-sensex-today-fii-outflows-40-billion-foreign-investors-indian-stocks-1537923.html"> <article class="top-headline-card-container"> <div class="top-headline-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/bse-nse12-11271790659721.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/bse-nse12-11271790659721.jpg" alt="$40 Billion FII Exit in 2 Years: Why Foreign Investors Are Turning Away From Indian Stocks" title="$40 Billion FII Exit in 2 Years: Why Foreign Investors Are Turning Away From Indian Stocks" /> </picture> </div> <div class="top-headline-card__content"> <h3>$40 Billion FII Exit in 2 Years: Why Foreign Investors Are Turning Away From Indian Stocks</h3> </div> </article> </a> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/wealth/markets/nifty-sensex-today-fii-outflows-40-billion-foreign-investors-indian-stocks-1537921.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/bse-nse12-11271790659721.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/bse-nse12-11271790659721.jpg" alt="$40 Billion FII Exit in 2 Years: Why Foreign Investors Are Turning Away From Indian Stocks" title="$40 Billion FII Exit in 2 Years: Why Foreign Investors Are Turning Away From Indian Stocks" /> </picture> </div> <div class="gr-common-card__content"> <h3>$40 Billion FII Exit in 2 Years: Why Foreign Investors Are Turning Away From Indian Stocks</h3> </div> </article> </a> <a href="/news/1-1-bonus-issues-rs-8-35-dividends-spinoff-rights-issue-next-week-natco-igl-sail-7-other-stocks-1537431.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/bonusdividendsrightsissuespinoffs-82501790401192.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/bonusdividendsrightsissuespinoffs-82501790401192.jpg" alt="1:1 Bonus Issues + Rs 8.35 Dividends + 1:5 Spinoff + 2:21 Rights Issue: 10 Stocks Ex-Date Next Week" title="1:1 Bonus Issues + Rs 8.35 Dividends + 1:5 Spinoff + 2:21 Rights Issue: 10 Stocks Ex-Date Next Week" /> </picture> </div> <div class="gr-common-card__content"> <h3>1:1 Bonus Issues + Rs 8.35 Dividends + 1:5 Spinoff + 2:21 Rights Issue: 10 Stocks Ex-Date Next Week</h3> </div> </article> </a> <a href="/lw/wealth/what-the-new-foreign-investment-reforms-mean-for-stocks-and-retail-investors-1526127.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/08/fii12-64981785745704.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/08/fii12-64981785745704.jpg" alt="What The New Foreign Investment Reforms Mean For Stocks And Retail Investors" title="What The New Foreign Investment Reforms Mean For Stocks And Retail Investors" /> </picture> </div> <div class="gr-common-card__content"> <h3>What The New Foreign Investment Reforms Mean For Stocks And Retail Investors</h3> </div> </article> </a> </div> </div> </div> <div class="right-section"> <!--IPO Radar--> </div> </div> <div class="gr-section-container gr-bor-bot"> <!--heading--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2 class="gr-common-heading__title">Markets Dashboard</h2> </div> </div> <div class="gr-market-grid"> <!--Markets Dashboard--> <div class="gr-section-container"> </div> <!--Gainers and Losers--> <div class="gr-section-container"> </div> <!--Currency Rates--> <div class="gr-section-container"> </div> </div> </div> <div class="gr-main-container" > <div class="left-section"> <!--Stocks--> <div class="gr-section-container"> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Mutual Funds</h2> </div> <a href="/mutual-funds/" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a> </div> <a href="/personal-finance/market-down-for-8-weeks-in-a-row-should-you-stop-your-sip-continue-or-invest-more-expert-explains-1538757.html"> <article class="top-headline-card-container"> <div class="top-headline-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/10/sipstrategy6-50361790886574.jpeg"> <img src="https://images.goodreturns.in/600x338/img/2026/10/sipstrategy6-50361790886574.jpeg" alt="Market Down for 8 Weeks in a Row: Should You Stop Your SIP, Continue or Invest More? Expert Explains" title="Market Down for 8 Weeks in a Row: Should You Stop Your SIP, Continue or Invest More? Expert Explains" /> </picture> </div> <div class="top-headline-card__content"> <h3>Market Down for 8 Weeks in a Row: Should You Stop Your SIP, Continue or Invest More? Expert Explains</h3> </div> </article> </a> <!--common card wrapper--> <div class="gr-common-card-wrapper"> <a href="/in-the-news/midasx-mf-utilities-bring-ai-wealth-tech-to-mfds-across-bharat-1532273.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/09/mf12-14041788333158.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/09/mf12-14041788333158.jpg" alt="MIDASX, MF Utilities Bring AI Wealth Tech To MFDs Across Bharat" title="MIDASX, MF Utilities Bring AI Wealth Tech To MFDs Across Bharat" /> </picture> </div> <div class="gr-common-card__content"> <h3>MIDASX, MF Utilities Bring AI Wealth Tech To MFDs Across Bharat</h3> </div> </article> </a> <a href="/personal-finance/ncdex-next-gen-mutual-fund-transaction-platform-nidhi-farmers-to-fpos-eligibility-features-benefits-1525223.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/07/mutualfundncdexnidhi-76691785393984.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/07/mutualfundncdexnidhi-76691785393984.jpg" alt="NCDEX Launches Next-Gen Mutual Fund Transaction Platform &#39;Nidhi&#39; For Farmers To FPOs: Key Features" title="NCDEX Launches Next-Gen Mutual Fund Transaction Platform &#39;Nidhi&#39; For Farmers To FPOs: Key Features" /> </picture> </div> <div class="gr-common-card__content"> <h3>NCDEX Launches Next-Gen Mutual Fund Transaction Platform &#39;Nidhi&#39; For Farmers To FPOs: Key Features</h3> </div> </article> </a> <a href="/personal-finance/best-liquid-fund-for-short-term-savings-axis-liquid-fund-vs-nippon-india-liquid-fund-comparison-1518237.html"> <article class="gr-common-card" style="width: 190px;"> <div class="gr-common-card__img"> <picture> <source srcset="https://images.goodreturns.in/webp/600x338/img/2026/06/mutual-fund121-1782406725.jpg"> <img src="https://images.goodreturns.in/600x338/img/2026/06/mutual-fund121-1782406725.jpg" alt="Best Liquid Fund for Short-Term Savings: Axis Liquid Fund vs Nippon India Liquid Fund Comparison" title="Best Liquid Fund for Short-Term Savings: Axis Liquid Fund vs Nippon India Liquid Fund Comparison" /> </picture> </div> <div class="gr-common-card__content"> <h3>Best Liquid Fund for Short-Term Savings: Axis Liquid Fund vs Nippon India Liquid Fund Comparison</h3> </div> </article> </a> </div> </div> </div> <div class="right-section"> </div> </div> <!--Videos--> <div class="gr-section-container gr-bor-bot" style="padding-bottom: 40px;border-bottom:0 none!important;"> <!--heading--> <div class="gr-common-heading"> <div class="gr-common-heading__title"> <h2>Videos</h2> </div> <!--<a href="/videos/" class="gr-common-heading__left"> <span>See more</span> <svg xmlns="https://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" > <path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path> </svg> </a>--> </div> <!--videos container--> <div class="videos-container"> <div class="videos-grid" id="videos"> </div> <div class="video-nav-wrapper"> <button class="video-nav-btn prev" aria-label="Previous"> <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="m15 18-6-6 6-6"></path> </svg> </button> <button class="video-nav-btn next" aria-label="Next"> <svg xmlns="https://www.w3.org/2000/svg" viewBox="0 0 24 24"> <path d="m9 18 6-6-6-6"></path> </svg> </button> </div> </div> </div> </div> <!--Footer--> <!--Footer--> <footer class="gr-footer"> <div class="footer-grid db-footer-section"> <!-- Logo + About --> <div class="footer-about"> <img src="https://images.goodreturns.in/images/goodreturns-logo-1768890557200.svg" alt="GoodReturns" class="footer-logo light-logo"> <img src="https://images.goodreturns.in/images/goodreturns-white-logo-1768890607572.svg" alt="GoodReturns" class="footer-logo dark-logo"> <p class="footer-desc">
 							GoodReturns is your trusted source for the latest financial news,
 							investment insights, and expert guidance. Stay updated and make
 							informed decisions with our comprehensive updates.
@@ -6290,7 +6294,7 @@ background-position: calc(100% - 40px) top;border-radius: 6px;margin: 24px auto;
 						&copy;<span id="curYear"></span> Greynium Information Technologies Pvt. Ltd.
 						<br>
 						All Rights Reserved.
-					</p> </div> </footer> <div class="cmscontent-right-rail inhouse-content" style="margin:0px 0 0 1003px;position: fixed;top: 0px;" id="cmscontent-right-rail"> <div id="are-slot-rightrail" class="oiad oi-axt oiadv"></div> </div> <script type="0309b63f1e92162bff44625b-text/javascript">
+					</p> </div> </footer> <div class="cmscontent-right-rail inhouse-content" style="margin:0px 0 0 1003px;position: fixed;top: 0px;" id="cmscontent-right-rail"> <div id="are-slot-rightrail" class="oiad oi-axt oiadv"></div> </div> <script type="00e2fcacb49b7c8655cec8fe-text/javascript">
   function setUserCookie(name, value, expires, path, domain, secure) {
     if (typeof fetchConsSts !== "undefined") {
       fetchConsSts().then(function (promVal) {
@@ -7462,7 +7466,7 @@ const pagination = document.querySelector('.pagination-wrapper');
     if (pagination && pagination.innerHTML.trim() === '') {
         pagination.style.display = 'none';
     }
-</script> </div> <script type="0309b63f1e92162bff44625b-text/javascript">
+</script> </div> <script type="00e2fcacb49b7c8655cec8fe-text/javascript">
     var d = new Date();
     var n = d.getMilliseconds();
     var urlburst = 'v='+n;
@@ -7480,7 +7484,7 @@ const pagination = document.querySelector('.pagination-wrapper');
                 script.async = false;
                 document.head.appendChild(script);
             });
-</script> <script type="0309b63f1e92162bff44625b-text/javascript" data-pagespeed-no-defer>
+</script> <script type="00e2fcacb49b7c8655cec8fe-text/javascript" data-pagespeed-no-defer>
 
 
 function loadTwitterWidgets(elements) {
@@ -7765,7 +7769,7 @@ function loadwhenAB() {
   if( document[hidden] !== undefined )
     onchange({type: document[hidden] ? "blur" : "focus"});
 })();
-</script> <!-- Start ZEDO OneIndia_Regional_Secure_300x250InView Tag --> <div class="non-friendly-scatter"> <div id="zb86e1f7a-e9e8-4dba-b688-ca9370dddbeb" style='display:none' ></div> </div> <!-- End ZEDO OneIndia_Regional_Secure_300x250InView Tag --> <!-- Facebook Pixel Code --> <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=422563459298864&ev=PageView&noscript=1" alt="facebookview"/></noscript> <!-- End Facebook Pixel Code --> <iframe id="multisync-iframe" height="0" width="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html?p=dfp&endpoint=apac" style="border: 0px; display: none;"></iframe> <script type="0309b63f1e92162bff44625b-text/javascript">
+</script> <!-- Start ZEDO OneIndia_Regional_Secure_300x250InView Tag --> <div class="non-friendly-scatter"> <div id="zb86e1f7a-e9e8-4dba-b688-ca9370dddbeb" style='display:none' ></div> </div> <!-- End ZEDO OneIndia_Regional_Secure_300x250InView Tag --> <!-- Facebook Pixel Code --> <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=422563459298864&ev=PageView&noscript=1" alt="facebookview"/></noscript> <!-- End Facebook Pixel Code --> <iframe id="multisync-iframe" height="0" width="0" marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://secure-assets.rubiconproject.com/utils/xapi/multi-sync.html?p=dfp&endpoint=apac" style="border: 0px; display: none;"></iframe> <script type="00e2fcacb49b7c8655cec8fe-text/javascript">
   function getBrowserName() {
           var name = "";
           if ((/(chrome\/)(\d+\.\d+)/i.test(navigator.userAgent) && navigator.userAgent.search("UCBrowser") < 0) && (/(chrome\/)(\d+\.\d+)/i.test(navigator.userAgent) && navigator.userAgent.search("Edge") < 0) && (/(chrome\/)(\d+\.\d+)/i.test(navigator.userAgent) && navigator.userAgent.search("UBrowser") < 0)){
@@ -7855,7 +7859,7 @@ if(typeof(chkcookiepolicy) == "undefined" || chkcookiepolicy == null){
 #InArticleImg #Native {
     width: 620px!important;
 }
-</style> <script type="0309b63f1e92162bff44625b-text/javascript">
+</style> <script type="00e2fcacb49b7c8655cec8fe-text/javascript">
 if(document.getElementById("adg_related_right")){
 document.getElementById("adg_related_right").innerHTML = '<li class="clearfix"><div class="adg_native_home" data-templateId_slotId="1459_0" data-nanoNativeFlag="1" style="display:none;"><a href="#" class="nano_promo_right_a"><img src="#" class="nano_promo_right_img"></a></div></li>';
 }
@@ -8105,7 +8109,7 @@ if(no_ad_flag==true){
 }
 
 !function(e){var t=function(u,D,f){"use strict";var k,H;if(function(){var e;var t={lazyClass:"lazy",loadedClass:"lazyloaded",loadingClass:"lazyloading",preloadClass:"lazypreload",errorClass:"lazyerror",autosizesClass:"lazyautosizes",srcAttr:"data-src",srcsetAttr:"data-srcset",sizesAttr:"data-sizes",minSize:40,customMedia:{},init:true,expFactor:1.5,hFac:.8,loadMode:2,loadHidden:true,ricTimeout:0,throttleDelay:125};H=u.lazySizesConfig||u.lazysizesConfig||{};for(e in t){if(!(e in H)){H[e]=t[e]}}}(),!D||!D.getElementsByClassName){return{init:function(){},cfg:H,noSupport:true}}var O=D.documentElement,a=u.HTMLPictureElement,P="addEventListener",$="getAttribute",q=u[P].bind(u),I=u.setTimeout,U=u.requestAnimationFrame||I,l=u.requestIdleCallback,j=/^picture$/i,r=["load","error","lazyincluded","_lazyloaded"],i={},G=Array.prototype.forEach,J=function(e,t){if(!i[t]){i[t]=new RegExp("(\\s|^)"+t+"(\\s|$)")}return i[t].test(e[$]("class")||"")&&i[t]},K=function(e,t){if(!J(e,t)){e.setAttribute("class",(e[$]("class")||"").trim()+" "+t)}},Q=function(e,t){var i;if(i=J(e,t)){e.setAttribute("class",(e[$]("class")||"").replace(i," "))}},V=function(t,i,e){var a=e?P:"removeEventListener";if(e){V(t,i)}r.forEach(function(e){t[a](e,i)})},X=function(e,t,i,a,r){var n=D.createEvent("Event");if(!i){i={}}i.instance=k;n.initEvent(t,!a,!r);n.detail=i;e.dispatchEvent(n);return n},Y=function(e,t){var i;if(!a&&(i=u.picturefill||H.pf)){if(t&&t.src&&!e[$]("srcset")){e.setAttribute("srcset",t.src)}i({reevaluate:true,elements:[e]})}else if(t&&t.src){e.src=t.src}},Z=function(e,t){return(getComputedStyle(e,null)||{})[t]},s=function(e,t,i){i=i||e.offsetWidth;while(i<H.minSize&&t&&!e._lazysizesWidth){i=t.offsetWidth;t=t.parentNode}return i},ee=function(){var i,a;var t=[];var r=[];var n=t;var s=function(){var e=n;n=t.length?r:t;i=true;a=false;while(e.length){e.shift()()}i=false};var e=function(e,t){if(i&&!t){e.apply(this,arguments)}else{n.push(e);if(!a){a=true;(D.hidden?I:U)(s)}}};e._lsFlush=s;return e}(),te=function(i,e){return e?function(){ee(i)}:function(){var e=this;var t=arguments;ee(function(){i.apply(e,t)})}},ie=function(e){var i;var a=0;var r=H.throttleDelay;var n=H.ricTimeout;var t=function(){i=false;a=f.now();e()};var s=l&&n>49?function(){l(t,{timeout:n});if(n!==H.ricTimeout){n=H.ricTimeout}}:te(function(){I(t)},true);return function(e){var t;if(e=e===true){n=33}if(i){return}i=true;t=r-(f.now()-a);if(t<0){t=0}if(e||t<9){s()}else{I(s,t)}}},ae=function(e){var t,i;var a=99;var r=function(){t=null;e()};var n=function(){var e=f.now()-i;if(e<a){I(n,a-e)}else{(l||r)(r)}};return function(){i=f.now();if(!t){t=I(n,a)}}},e=function(){var v,m,c,h,e;var y,z,g,p,C,b,A;var n=/^img$/i;var d=/^iframe$/i;var E="onscroll"in u&&!/(gle|ing)bot/.test(navigator.userAgent);var _=0;var w=0;var N=0;var M=-1;var x=function(e){N--;if(!e||N<0||!e.target){N=0}};var W=function(e){if(A==null){A=Z(D.body,"visibility")=="hidden"}return A||!(Z(e.parentNode,"visibility")=="hidden"&&Z(e,"visibility")=="hidden")};var S=function(e,t){var i;var a=e;var r=W(e);g-=t;b+=t;p-=t;C+=t;while(r&&(a=a.offsetParent)&&a!=D.body&&a!=O){r=(Z(a,"opacity")||1)>0;if(r&&Z(a,"overflow")!="visible"){i=a.getBoundingClientRect();r=C>i.left&&p<i.right&&b>i.top-1&&g<i.bottom+1}}return r};var t=function(){var e,t,i,a,r,n,s,l,o,u,f,c;var d=k.elements;if((h=H.loadMode)&&N<8&&(e=d.length)){t=0;M++;for(;t<e;t++){if(!d[t]||d[t]._lazyRace){continue}if(!E||k.prematureUnveil&&k.prematureUnveil(d[t])){R(d[t]);continue}if(!(l=d[t][$]("data-expand"))||!(n=l*1)){n=w}if(!u){u=!H.expand||H.expand<1?O.clientHeight>500&&O.clientWidth>500?500:370:H.expand;k._defEx=u;f=u*H.expFactor;c=H.hFac;A=null;if(w<f&&N<1&&M>2&&h>2&&!D.hidden){w=f;M=0}else if(h>1&&M>1&&N<6){w=u}else{w=_}}if(o!==n){y=innerWidth+n*c;z=innerHeight+n;s=n*-1;o=n}i=d[t].getBoundingClientRect();if((b=i.bottom)>=s&&(g=i.top)<=z&&(C=i.right)>=s*c&&(p=i.left)<=y&&(b||C||p||g)&&(H.loadHidden||W(d[t]))&&(m&&N<3&&!l&&(h<3||M<4)||S(d[t],n))){R(d[t]);r=true;if(N>9){break}}else if(!r&&m&&!a&&N<4&&M<4&&h>2&&(v[0]||H.preloadAfterLoad)&&(v[0]||!l&&(b||C||p||g||d[t][$](H.sizesAttr)!="auto"))){a=v[0]||d[t]}}if(a&&!r){R(a)}}};var i=ie(t);var B=function(e){var t=e.target;if(t._lazyCache){delete t._lazyCache;return}x(e);K(t,H.loadedClass);Q(t,H.loadingClass);V(t,L);X(t,"lazyloaded")};var a=te(B);var L=function(e){a({target:e.target})};var T=function(t,i){try{t.contentWindow.location.replace(i)}catch(e){t.src=i}};var F=function(e){var t;var i=e[$](H.srcsetAttr);if(t=H.customMedia[e[$]("data-media")||e[$]("media")]){e.setAttribute("media",t)}if(i){e.setAttribute("srcset",i)}};var s=te(function(t,e,i,a,r){var n,s,l,o,u,f;if(!(u=X(t,"lazybeforeunveil",e)).defaultPrevented){if(a){if(i){K(t,H.autosizesClass)}else{t.setAttribute("sizes",a)}}s=t[$](H.srcsetAttr);n=t[$](H.srcAttr);if(r){l=t.parentNode;o=l&&j.test(l.nodeName||"")}f=e.firesLoad||"src"in t&&(s||n||o);u={target:t};K(t,H.loadingClass);if(f){clearTimeout(c);c=I(x,2500);V(t,L,true)}if(o){G.call(l.getElementsByTagName("source"),F)}if(s){t.setAttribute("srcset",s)}else if(n&&!o){if(d.test(t.nodeName)){T(t,n)}else{t.src=n}}if(r&&(s||o)){Y(t,{src:n})}}if(t._lazyRace){delete t._lazyRace}Q(t,H.lazyClass);ee(function(){var e=t.complete&&t.naturalWidth>1;if(!f||e){if(e){K(t,"ls-is-cached")}B(u);t._lazyCache=true;I(function(){if("_lazyCache"in t){delete t._lazyCache}},9)}if(t.loading=="lazy"){N--}},true)});var R=function(e){if(e._lazyRace){return}var t;var i=n.test(e.nodeName);var a=i&&(e[$](H.sizesAttr)||e[$]("sizes"));var r=a=="auto";if((r||!m)&&i&&(e[$]("src")||e.srcset)&&!e.complete&&!J(e,H.errorClass)&&J(e,H.lazyClass)){return}t=X(e,"lazyunveilread").detail;if(r){re.updateElem(e,true,e.offsetWidth)}e._lazyRace=true;N++;s(e,t,r,a,i)};var r=ae(function(){H.loadMode=3;i()});var l=function(){if(H.loadMode==3){H.loadMode=2}r()};var o=function(){if(m){return}if(f.now()-e<999){I(o,999);return}m=true;H.loadMode=3;i();q("scroll",l,true)};return{_:function(){e=f.now();k.elements=D.getElementsByClassName(H.lazyClass);v=D.getElementsByClassName(H.lazyClass+" "+H.preloadClass);q("scroll",i,true);q("resize",i,true);q("pageshow",function(e){if(e.persisted){var t=D.querySelectorAll("."+H.loadingClass);if(t.length&&t.forEach){U(function(){t.forEach(function(e){if(e.complete){R(e)}})})}}});if(u.MutationObserver){new MutationObserver(i).observe(O,{childList:true,subtree:true,attributes:true})}else{O[P]("DOMNodeInserted",i,true);O[P]("DOMAttrModified",i,true);setInterval(i,999)}q("hashchange",i,true);["focus","mouseover","click","load","transitionend","animationend"].forEach(function(e){D[P](e,i,true)});if(/d$|^c/.test(D.readyState)){o()}else{q("load",o);D[P]("DOMContentLoaded",i);I(o,2e4)}if(k.elements.length){t();ee._lsFlush()}else{i()}},checkElems:i,unveil:R,_aLSL:l}}(),re=function(){var i;var n=te(function(e,t,i,a){var r,n,s;e._lazysizesWidth=a;a+="px";e.setAttribute("sizes",a);if(j.test(t.nodeName||"")){r=t.getElementsByTagName("source");for(n=0,s=r.length;n<s;n++){r[n].setAttribute("sizes",a)}}if(!i.detail.dataAttr){Y(e,i.detail)}});var a=function(e,t,i){var a;var r=e.parentNode;if(r){i=s(e,r,i);a=X(e,"lazybeforesizes",{width:i,dataAttr:!!t});if(!a.defaultPrevented){i=a.detail.width;if(i&&i!==e._lazysizesWidth){n(e,r,a,i)}}}};var e=function(){var e;var t=i.length;if(t){e=0;for(;e<t;e++){a(i[e])}}};var t=ae(e);return{_:function(){i=D.getElementsByClassName(H.autosizesClass);q("resize",t)},checkElems:t,updateElem:a}}(),t=function(){if(!t.i&&D.getElementsByClassName){t.i=true;re._();e._()}};return I(function(){H.init&&t()}),k={cfg:H,autoSizer:re,loader:e,init:t,uP:Y,aC:K,rC:Q,hC:J,fire:X,gW:s,rAF:ee}}(e,e.document,Date);e.lazySizes=t,"object"==typeof module&&module.exports&&(module.exports=t)}("undefined"!=typeof window?window:{});
-</script> <script type="0309b63f1e92162bff44625b-text/javascript">
+</script> <script type="00e2fcacb49b7c8655cec8fe-text/javascript">
 document.addEventListener('DOMContentLoaded', function() {
 /*if(host1=='www.oneindia.com'){
     var script = document.createElement('script');
@@ -8784,10 +8788,6 @@ function getCFCode(){
 			event: "login",
 			userId: userLoggedInId, // Replace with your actual dynamic User ID
 		});
-		console.log("datalayer", {
-			event: "login",
-			userId: userLoggedInId, // Replace with your actual dynamic User ID
-		});
 	}
 	if (window.location.hostname == "tamil.filmibeat.com") {
 		if (document.getElementById("are-slot-2")) {
@@ -8796,7 +8796,7 @@ function getCFCode(){
 	}
 
 	//carousel render for CAMP123
-    if (['CAMP123'].includes(utmParams?.utm_medium) && !["gizbot"].includes(domainmiddle) && /Mobi|Android/i.test(navigator.userAgent) && trackpagetype == "article") { 
+    if (['CAMP123'].includes(utmParams?.utm_medium) && globalAdObj.gpt == 1 && !["gizbot","drivespark"].includes(domainmiddle) && /Mobi|Android/i.test(navigator.userAgent) && trackpagetype == "article") { 
 	
         globalAdObj.gam1 = 0;
         var SEQ = 0;                 // makes every slot div id unique
@@ -9924,7 +9924,7 @@ function getCFCode(){
 			}
 		}
 
-		if (interstritial == 1) {
+		if (interstritial == 1  && globalAdObj.gpt == 1) {
 			if (!interstitalAdUnitLoaded) {
 				interstitalAdUnitLoaded = true;
 				if(domainmiddle == "goodreturns"){
@@ -9935,7 +9935,7 @@ function getCFCode(){
 			}
 		}
 
-		if (domainmiddle == "goodreturns") {
+		if (globalAdObj.gpt == 1 && domainmiddle == "goodreturns") {
 			if (document.getElementById("oneindia_mobile_polls_container") && document.getElementById("oneindia_mobile_polls_container").dataset.poll_render == "false") {
 				if (!pollsBackfill) {
 					pollsBackfill = true;
@@ -9982,38 +9982,7 @@ function getCFCode(){
 						}
 					}
 				})
-				.catch(err=>console.log("third slot video ad:", err))
-			/* if(window.location.search.indexOf("tapmind=1") > -1){
-			}else{
-				fetch("/common/aniview_tags.json")
-					.then(res => res.json())
-					.then(data => {
-						let videoadPlaceholder = document.getElementById("are-slot-3");
-						if(videoadPlaceholder){
-							let aniviewTags = data[domainmiddle];
-							if(domainmiddle == "oneindia"){
-								aniviewTags = data[domainmiddle][langParam];
-							}
-							videoadPlaceholder.classList.remove("dynamic-slot");
-							videoadPlaceholder.classList.remove("oiad", "oi-axt", "oiadv");
-							videoadPlaceholder.classList.add("videoStyleAd");
-							if (aniviewTags) {
-								let aniviewWrapper = document.createElement("div");
-								aniviewWrapper.id = "aniviewWrapper";
-								videoadPlaceholder.appendChild(aniviewWrapper);
-								const script1 = document.createElement("script");
-								script1.async = false;
-								script1.id = `${aniviewTags.script_id}`;
-								script1.type = "text/javascript";
-								script1.dataset.cfasync = false;
-								script1.src = `${aniviewTags.script_src}`;
-								document.head.appendChild(script1);
-							}
-						}
-					})
-					.catch(err=>console.log("third slot video ad:", err))
-			} */
-				
+				.catch(err=>console.log("third slot video ad:", err))				
 		}
 		
 		if (!continueReadingInitialized && readMoreEnable == 1) {
@@ -10062,97 +10031,6 @@ function getCFCode(){
 
 	}, {passive:true});
 
-	/*---------------------------------------Anymind ad loading with script----------------------------------------------------*/
-	let anymindScriptLoaded = false;
-	function loadAnymindScriptOnScroll() {
-		if (anymindScriptLoaded) return;
-
-		const script = document.createElement("script");
-		script.type = "application/javascript";
-		script.src = "//anymind360.com/js/2074/ats.js";
-
-		document.head.appendChild(script);
-		anymindScriptLoaded = true;
-		window.removeEventListener("scroll", loadAnymindScriptOnScroll);
-	}
-
-	/*---------------------------------------Inhouse interstial ad----------------------------------------------------*/
-	let createOverlayContainer = () => {
-		if (document.getElementById("overlayContainer")) return;
-
-		const overlay = document.createElement("div");
-		overlay.id = "overlayContainer";
-		overlay.style.cssText = ` display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(66, 66, 66, 0.95); justify-content: center; align-items: center; z-index: 99999999999; visibility: hidden; opacity: 0; transition: opacity 0.3s ease, visibility 0.3s ease; `;
-
-		const adBox = document.createElement("div");
-		adBox.id = "overlayAdInter";
-		adBox.style.cssText = ` width: 300px; height: 250px; background: #fff; position: relative; border-radius: 4px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); display: flex; justify-content: center; align-items: center; `;
-
-		const closeDivElement = document.createElement("div");
-		closeDivElement.id = "closeElement";
-		closeDivElement.style.cssText = ` position: absolute; top: 10px; right: 10px; min-width: 95px; height: 40px; cursor: pointer; z-index: 10; font-size: 15px; white-space: nowrap; background-color: #181617; border-radius: 20px; color: #fff; display: flex; align-items: center; justify-content: space-between; padding: 0 15px; `;
-		closeDivElement.addEventListener("click", closeAd);
-
-		const closeText = document.createElement("span");
-		closeText.textContent = "Close";
-		closeText.style.marginRight = "10px";
-		closeDivElement.appendChild(closeText);
-
-		const closeImage = document.createElement("img");
-		closeImage.src = "https://imagesvs.oneindia.com/images/ad-close-icon-1743079250425.svg";
-		closeImage.alt = "Close";
-		closeImage.width = 18;
-		closeDivElement.appendChild(closeImage);
-
-		overlay.appendChild(adBox);
-		overlay.appendChild(closeDivElement);
-		document.body.appendChild(overlay);
-	};
-
-	function loadOverlayAd(adunit) {
-		if (!window.googletag?.cmd) return;
-
-		googletag.cmd.push(function () {
-			const adContainer = document.getElementById("overlayAdInter");
-			if (!adContainer) {
-				console.warn("overlayAdInter element is not created");
-				return;
-			}
-
-			const interstitialSlot = googletag.defineSlot(adunit, [1, 1], "overlayAdInter").addService(googletag.pubads());
-
-			googletag.pubads().enableSingleRequest();
-			googletag.pubads().addEventListener("slotRenderEnded", function (event) {
-				if (event.slot.getSlotElementId() !== "overlayAdInter") return;
-
-				if (event.isEmpty) {
-					console.warn("Interstitial overlay slot returned empty");
-					return;
-				}
-
-				const overlayContainer = document.getElementById("overlayContainer");
-				if (overlayContainer) {
-					overlayContainer.style.display = "flex";
-					overlayContainer.style.visibility = "visible";
-					overlayContainer.style.opacity = "1";
-				}
-			});
-
-			googletag.enableServices();
-			googletag.display("overlayAdInter");
-		});
-	}
-
-	function closeAd() {
-		const overlayContainer = document.getElementById("overlayContainer");
-		if (!overlayContainer) return;
-
-		overlayContainer.style.opacity = "0";
-		overlayContainer.style.visibility = "hidden";
-		setTimeout(() => {
-			overlayContainer.style.display = "none";
-		}, 300);
-	}
 
 	/* matured content */
 	const DB_NAME = "maturedContentDB";
@@ -10380,123 +10258,9 @@ function getCFCode(){
 		fillEmptySlotsWithArticles = 0;
 		bottomStickyAdEnable = 0;
 	} */
-	function isElementOverlay(el, minAreaPercent = 0.02) {
-		const rect = el.getBoundingClientRect();
-		if (rect.width === 0 || rect.height === 0) return false;
+	
 
-		const viewportArea = window.innerWidth * window.innerHeight;
-		const elementArea = rect.width * rect.height;
-
-		// If the element covers a large portion of the viewport
-		const areaRatio = elementArea / viewportArea;
-
-		// Check if it’s fixed/absolute and has high z‑index
-		const style = window.getComputedStyle(el);
-		const position = style.position;
-		const zIndex = parseInt(style.zIndex, 10) || 0;
-
-		const isFixedOrAbs = position === "fixed" || position === "absolute";
-		const isHighZIndex = zIndex > 0;
-		const isLargeArea = areaRatio > minAreaPercent;
-
-		return isFixedOrAbs && isHighZIndex && isLargeArea;
-	}
-
-	function detectOverlayAds() {
-		const candidates = Array.from(document.querySelectorAll("div, iframe, ins, .overlay, .modal, .popup, .lightbox, [id*='overlay'], [class*='popup']"));
-		for (const el of candidates) {
-			if (isElementOverlay(el, 0.02)) {
-				let text = "";
-				try {
-					text = (el.innerText || "").toLowerCase();
-				} catch (e) { }
-
-				const classStr = typeof el.className === "string" ? el.className : "";
-				const idStr = el.id || "";
-				const elSrc = el.src || "";
-
-				const isAdNetworkElement = (el.tagName === 'IFRAME' || el.tagName === 'INS') &&
-					/google_ads|google_ad|adsbygoogle|taboola|outbrain|gpt_unit/i.test(idStr + ' ' + classStr + ' ' + elSrc);
-
-				const hasAdText = /subscribe|daily update|interstitial|subscribe now|email wall|ab-sticky|pop|\badvertisement\b|\bsponsored\b|\bclose\b|\bad\b|\bads\b/i.test(text);
-
-				const hasAdIndicators = /(?:^|[-_])(ad|ads|gpt)(?:[-_]|$)|banner|interstitial|modal|sticky/i.test(classStr + ' ' + idStr);
-
-				const zIndex = parseInt(window.getComputedStyle(el).zIndex, 10) || 0;
-				const isMaxZIndex = zIndex >= 2147480000;
-				console.log(hasAdText, isAdNetworkElement, hasAdIndicators, isMaxZIndex);
-				if (hasAdText || isAdNetworkElement || hasAdIndicators || isMaxZIndex) {
-					return { found: true, selector: el.tagName + "." + classStr.split(" ")[0], element: el };
-				}
-			}
-		}
-		return { found: false };
-	}
-	if ("hindi.oneindia.com" == window.location.hostname) {
-		function reportOverlay(overlayInfo, pageLoadTime) {
-			console.log("overlay detect", {
-				url: window.location.href,
-				overlay: true,
-				ts: Date.now(),
-				browser: navigator.userAgent,
-				selector: overlayInfo.selector,
-				element: overlayInfo.element,
-				pageLoadTime,
-			});
-		}
-
-		window.addEventListener("load", () => {
-			let pageLoadTime = Date.now();
-			setTimeout(() => {
-				// Initial check
-				const initialCheck = detectOverlayAds();
-				if (initialCheck.found) {
-					reportOverlay(initialCheck, pageLoadTime);
-					return; // Stop if found
-				}
-
-				let debounceTimer;
-				const observer = new MutationObserver(() => {
-					if (debounceTimer) return;
-					debounceTimer = setTimeout(() => {
-						debounceTimer = null;
-						const info = detectOverlayAds();
-						if (info.found) {
-							reportOverlay(info, pageLoadTime);
-							observer.disconnect(); // Stop observing once we've detected it
-						}
-					}, 250); // 250ms debounce
-				});
-
-				observer.observe(document.documentElement, {
-					childList: true,
-					subtree: true,
-					attributes: true,
-					attributeFilter: ['style', 'class']
-				});
-			}, 1000); // start observing after 1 second
-		});
-	}
-
-	if (window.location.search.indexOf("inp=1") > -1) {
-		const script = document.createElement('script');
-		script.src = 'https://unpkg.com/web-vitals@4/dist/web-vitals.attribution.iife.js';
-		document.head.appendChild(script);
-		script.onload = () => {
-			webVitals.onINP(({ value, attribution }) => {
-				console.log('webvitals', 'INP:', value, 'ms');
-				console.log('webvitals', 'Element:', attribution.interactionTarget);
-				console.log('webvitals', 'Type:', attribution.interactionType);
-				console.log('webvitals', 'Input delay:', attribution.inputDelay);
-				console.log('webvitals', 'Processing time:', attribution.processingDuration);
-				console.log('webvitals', 'Presentation delay:', attribution.presentationDelay);
-			}, { reportAllChanges: true });
-		};
-	}
-
-	// TTG native cards: ttgNativeCards[lang][category] = { title, thumbnail, hpUrl, indexUrl }
-    // hpUrl is for the home page (utm_medium=HP-Native), indexUrl for collection pages (utm_medium=Index-Native).
-    // Only the titles differ per language; thumbnail and landing urls are built from category and language.
+	// TTG native cards: ttgNativeCards[lang][category] = { title, thumbnail, url } - url tagged utm_medium=CP-Native
     const ttgNativeCards = (function () {
         // 600x338 thumbnails, same image for every language
         const thumbnails = {
@@ -10553,23 +10317,17 @@ function getCFCode(){
             cards[lang] = {};
             for (const category in titles[lang]) {
                 // Landing page in ttgLandingLang (common-policy), also when the card falls back to another language's titles
-                const landing = `https://partner.talktoguruji.com/${ttgLandingLang}/oneindia/${category}?utm_source=${activeUtm}&utm_campaign=TTG-${category[0].toUpperCase() + category.slice(1)}`;
                 cards[lang][category] = {
                     title: titles[lang][category],
                     thumbnail: thumbnails[category],
-                    hpUrl: landing.replace("&utm_campaign", "&utm_medium=HP-Native&utm_campaign"),
-                    indexUrl: landing.replace("&utm_campaign", "&utm_medium=Index-Native&utm_campaign"),
+                    url: `https://partner.talktoguruji.com/${ttgLandingLang}/oneindia/${category}?utm_source=${activeUtm}&utm_medium=Index-Native&utm_campaign=TTG-${category[0].toUpperCase() + category.slice(1)}`,
                 };
             }
         }
         return cards;
     })();
 
-
     // Native card <li> for any story list. Uses its own oi-ttgn-* classes (not the site's list classes) so it looks the
-    // same in every list; oi-ttgn-mobi / oi-ttgn-desk switch the layout. Uses the site language's card, falling back to
-    // the creative language (gu, bn, mr, or, pa -> hi), and returns "" when that language has no card for `category`.
-    // Home page links use hpUrl, every other page indexUrl.
     function ttgNativeCard(category) {
         const card = (ttgNativeCards[sitelang] || ttgNativeCards[ttgLang])?.[category];
         if (!card) return "";
@@ -10603,11 +10361,11 @@ function getCFCode(){
                 .oi-ttgn-mobi.oi-ttgn-drivespark .oi-ttgn-thumb {border-radius: 0;}
                 .oi-ttgn-mobi.oi-ttgn-drivespark .oi-ttgn-body {margin: 0;padding: 14px 16px 18px;}
                 .oi-ttgn-mobi.oi-ttgn-drivespark .oi-ttgn-title {font-size: 17px;line-height: 1.55;}
-                /* Drivespark desktop: dark rounded card, thumbnail flush on the left, white title top-right */
-                .oi-ttgn-desk.oi-ttgn-drivespark {--ttgn-title: #FFFFFF;--ttgn-border: #3A3F4A;grid-template-columns: 232px 1fr;column-gap: 20px;background: rgb(30 40 54);border: 1px solid var(--ttgn-border);border-radius: 10px;overflow: hidden;}
-                .oi-ttgn-desk.oi-ttgn-drivespark .oi-ttgn-thumb {border-radius: 0;}
-                .oi-ttgn-desk.oi-ttgn-drivespark .oi-ttgn-body {padding: 18px 20px 18px 0;}
-                .oi-ttgn-desk.oi-ttgn-drivespark .oi-ttgn-title {font-size: 18px;line-height: 1.6;}
+                /* Drivespark desktop: exact native card matching site feed style, theme vars, hover lift & title color transition */
+				.oi-ttgn-desk.oi-ttgn-drivespark {grid-template-columns: repeat(3, 1fr);column-gap: 0;background: var(--card-bg);backdrop-filter: blur(6px);border: 1px solid var(--card-border);border-radius: 12px;overflow: hidden;box-shadow: var(--card-shadow);margin-bottom: 32px;cursor: pointer;transition: all 0.5s ease;}.oi-ttgn-desk.oi-ttgn-drivespark:hover {box-shadow: var(--card-shadow-hover);transform: translateY(-4px);}
+				.oi-ttgn-desk.oi-ttgn-drivespark .oi-ttgn-thumb {border-radius: 0;aspect-ratio: 16 / 9;position: relative;overflow: hidden;height: 100%;}.oi-ttgn-desk.oi-ttgn-drivespark .oi-ttgn-img {width: 100%;height: 100%;object-fit: cover;transition: transform 1s ease-out;}.oi-ttgn-desk.oi-ttgn-drivespark:hover .oi-ttgn-img {transform: scale(1.02);}
+				.oi-ttgn-desk.oi-ttgn-drivespark .oi-ttgn-body {padding: 20px;grid-column: span 2;display: flex;flex-direction: column;justify-content: center;}
+				.oi-ttgn-desk.oi-ttgn-drivespark .oi-ttgn-title {font-size: 20px;font-weight: 600;height: 80px;margin-bottom: 12px;line-height: 1.4;color: var(--card-title);text-decoration: none !important;transition: color 0.3s ease;}.oi-ttgn-desk.oi-ttgn-drivespark:hover .oi-ttgn-title {color: var(--card-title-hover);text-decoration: none !important;}
                 /* Boldsky desktop: smaller square-cornered thumbnail, regular-weight dark title */
                 .oi-ttgn-desk.oi-ttgn-boldsky {--ttgn-title: #222222;grid-template-columns: 220px 1fr;column-gap: 32px;margin-bottom: 16px !important;}
                 .theme-dark .oi-ttgn-desk.oi-ttgn-boldsky {--ttgn-title: #FFFFFF;}
@@ -10627,15 +10385,13 @@ function getCFCode(){
                 </style>`,
             );
         }
-        const url = trackpagetype == "home" ? card.hpUrl : card.indexUrl;
-        const link = `href="${url}" target="_blank" rel="sponsored nofollow noopener"`;
+        const link = `href="${card.url}" target="_blank" rel="sponsored nofollow noopener"`;
         return `<li class="oi-ttgn-card ${isMobile ? "oi-ttgn-mobi" : "oi-ttgn-desk"} oi-ttgn-${domainmiddle}" data-ttg-category="${category}">
                 <a ${link} class="oi-ttgn-thumb"><img class="oi-ttgn-img" src="${card.thumbnail}" alt="${card.title}" width="600" height="338" loading="lazy"></a>
                 <div class="oi-ttgn-body"><a ${link} class="oi-ttgn-title">${card.title}</a></div>
             </li>`;
     }
 
-	
 	function injectNativeBanners() {
 		if (["drivespark", "careerindia", "boldsky", "oneindia"].includes(domainmiddle) && trackpagetype === "index") {
 			const isOneindia = window.location.hostname.includes("oneindia");
@@ -10645,11 +10401,11 @@ function getCFCode(){
 			if (isOneindia) {
 				const oneIndiaCategoryMap = {
 					en: ["/astrology"],
-					hi: ["/astrology", "/topic/yearly-horoscope/"],
-					ta: ["/astrology", "/astrology/nakshatra", "/astrology/panchangam", "/topic/rahu-ketu-peyarchi-palan-2022/"],
-					te: ["/jyotishyam", "/jyotishyam/feature", "/jyotishyam/weekly-raasi-phala/", "/jyotishyam/"],
-					ml: ["/astrology"],
-					kn: ["/astrology", "/astrology/daily-horoscope", "/astrology/monthly-horoscope", "/astrology/weekly-horoscope", "/topic/yearly-horoscope/"]
+                    hi: ["/astrology", "/topic/yearly-horoscope/"],
+                    ta: ["/astrology", "/astrology/nakshatra", "/astrology/panchangam", "/topic/rahu-ketu-peyarchi-palan-2022/"],
+                    te: ["/jyotishyam", "/jyotishyam/feature", "/jyotishyam/weekly-raasi-phala/", "/jyotishyam/"],
+                    ml: ["/astrology"],
+                    kn: ["/astrology", "/astrology/daily-horoscope", "/astrology/monthly-horoscope", "/astrology/weekly-horoscope", "/topic/yearly-horoscope/", "/astrology/year-prediction/"]
 				};
 
 				const allowedPaths = oneIndiaCategoryMap[langParam.toLocaleLowerCase()] || oneIndiaCategoryMap["en"];
@@ -10758,7 +10514,8 @@ function getCFCode(){
 
         const el = document.createElement("div");
         el.className = "oi-widget-talk-to-guruji-article-wrapper";
-        el.innerHTML = `<a href="${ttgBanners[ttgLang].rectangleBaner[category].url}" class="oi-ttga-banner" target="_blank" rel="sponsored nofollow noopener">
+        // Same landing url as the banners, tagged utm_medium=Article-Widget instead of HP-Native
+        el.innerHTML = `<a href="${ttgBanners[ttgLang].rectangleBaner[category].url.replace("utm_medium=RI", "utm_medium=Article-Widget")}" class="oi-ttga-banner" target="_blank" rel="sponsored nofollow noopener">
                 <span class="oi-ttga-text">
                     <span class="oi-ttga-title">${currentDetail.title}</span>
                     <span class="oi-ttga-sub">Limited Time Offer! Get Flat <b>${currentDetail.offer}</b> Off</span>
@@ -10768,10 +10525,7 @@ function getCFCode(){
         return el;
     }
 
-
     // Drivespark and Careerindia show their matching TTG widget right after the first ad slot (the ad itself stays);
-    // Boldsky, and any other site's article marked <head data-ttg-promo="1">, rotates through the categories - the next one
-    // on each article view in the session (index kept in sessionStorage "ttg_article_category_index")
     const ttgAllCategories = Object.keys(ttgBanners[ttgLang].rectangleBaner);
     const ttgSiteCategories = { drivespark: ["vehicle"], careerindia: ["career"], boldsky: ttgAllCategories }[domainmiddle] || (document.head.dataset?.ttgPromo == "1" ? ttgAllCategories : null);
     if (ttgSiteCategories && trackpagetype == "article") {
@@ -10793,7 +10547,7 @@ function getCFCode(){
         }, { once: true, passive: true });
     }
 
-</script> <script type="0309b63f1e92162bff44625b-text/javascript" data-pagespeed-no-defer>
+</script> <script type="00e2fcacb49b7c8655cec8fe-text/javascript" data-pagespeed-no-defer>
 	/*---------------------------------------Read more feature starts--------------------------------------------------------*/
 	let readmoreflag1 = false;
 	let anchorData = false;
@@ -10814,32 +10568,6 @@ function getCFCode(){
 	if(document.head.dataset?.template_name == 'partner-content'){
 		articleDeeplinksLoaded = true;
 	}
-
-	window.addEventListener("load", function () {
-		if (domainmiddle == "goodreturns" && trackpagetype == "database" && /Mobi|Android/i.test(navigator.userAgent)) {
-			let pgdElement = document.getElementById("are-slot-pgd-1");
-			if (pgdElement) {
-				pgdElement.style.display = "none";
-			}
-			if ([...document.querySelectorAll(".gd-article-related-wrapper")][0]) {
-				// pgdElement.id = "are-slot-pgd-1";
-				// pgdElement.style = "width: 100%; height: 100px; padding: 5px;text-align:center;"
-				// oiinsertBefore(document.querySelectorAll(".gd-article-related-wrapper")[0], pgdElement);
-				/* let googletagScript = document.createElement("script");
-				googletagScript.text = `
-					googletag.cmd.push(function() {
-	
-						let adxSlot = googletag.defineSlot('/1008496/adx-gr-mobi-sticky', [[320, 50], [320, 100]], 'are-slot-pgd-1').addService(googletag.pubads());
-						googletag.pubads().enableSingleRequest();
-	
-						googletag.enableServices();
-						googletag.pubads().refresh([adxSlot]);
-					});
-				`;
-				pgdElement.appendChild(googletagScript); */
-			}
-		}
-	});
 
 
 
@@ -10922,7 +10650,6 @@ function getCFCode(){
 
 	function getAdMarkup(slot) {
 		const mobile = /Mobi|Android/i.test(navigator.userAgent);
-
 		return `
 			<style>
 			#oi-vox{
@@ -11159,35 +10886,28 @@ function getCFCode(){
 		}
 		loadDmpAndUserTracking()
 	}
+	/*---------------------------------------VOX/Adsense Backfil Code Ends--------------------------------------------------------*/
 
-	/* if (document.querySelector(".myimg")) {
-		let imageelem = document.querySelectorAll(".myimg");
-		let imglen = imageelem.length;
-		if (imglen > 0) {
-			for (g = 0; g < imglen; g++) {
-				if (g == 0) {
-					imageelem[0].setAttribute("data-adgdisplay", false);
-					if (backfillorder == 1) {
-						backfillWidgets.adsenseWidget(finalHtmlCss, 2, g, imageelem[g]);
-					} else if (backfillorder == 2) {
-						backfillWidgets.voxWidget(g, imageelem[g]);
-					}
-				} else if (g == 2) {
-					imageelem[2].setAttribute("data-adgdisplay", false);
-					backfillWidgets.adsenseWidget(finalHtmlCss, 2, g, imageelem[g]);
-				} else if (g == 4) {
-					imageelem[2].setAttribute("data-adgdisplay", false);
-					backfillWidgets.adsenseWidget(finalHtmlCss, 2, g, imageelem[g]);
-				}
-			}
-		}
-	} */
 	if (['CAMP123','CAMPRRR'].includes(utmParams?.utm_medium)) {
 		document.getElementById("adg_native_ocean") && document.getElementById("adg_native_ocean").remove();
 		if(document.getElementById("are-slot-3")){
 			document.getElementById("are-slot-3").classList.remove("oiad", "oi-axt","oiadv");
 			document.getElementById("are-slot-3").classList.remove("dynamic-slot");
 			document.getElementById("are-slot-3").classList.add("removeStyleAd");
+		}
+		if(domainmiddle == "drivespark"){
+			if (document.getElementById("are-slot-1")) {
+				   document.getElementById("are-slot-1").style.display = "none";
+			}
+			if (document.getElementById("are-slot-2")) {
+				   document.getElementById("are-slot-2").style.display = "none";
+			}
+			if (document.getElementById("are-slot-leaderboard")) {
+				   document.getElementById("are-slot-leaderboard").style.display = "none";
+			}
+			if (document.getElementById("are-slot-mr1")) {
+				   document.getElementById("are-slot-mr1").style.display = "none";
+			}
 		}
 		if (document.getElementById("are-slot-4")) {
        		document.getElementById("are-slot-4").style.display = "none";
@@ -11202,52 +10922,29 @@ function getCFCode(){
     	    document.getElementById("are-slot-7").style.display = "none";
     	}
 	}
-	/*---------------------------------------VOX/Adsense Backfil Code Ends--------------------------------------------------------*/
+
+	function checkConsentAndTriggerClarity() {
+		window.googlefc = window.googlefc || {};
+		window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
+		window.googlefc.callbackQueue.push({
+			CONSENT_DATA_READY: () =>
+				__tcfapi("addEventListener", 2, (tcData, success) => {
+					if (success) {
+						const hasConsent = tcData.purpose.consents && tcData.purpose.consents[1];
+						if (hasConsent) {
+							console.log("Consent granted for tracking");
+							window.clarity("consent");
+						} else {
+							console.log("Consent not granted for tracking");
+						}
+					} else {
+						console.log("Unable to retrieve consent status or TC Data is invalid");
+					}
+				}),
+		});
+	}
+	
 	window.addEventListener("scroll", function () {
-
-		/* anchor tag tracker */
-		if (!anchorData) {
-			anchorData = true;
-			if (domainmiddle == "goodreturns") {
-				const observer = new IntersectionObserver(
-					(entries) => {
-						entries.forEach((entry) => {
-							if (entry.isIntersecting) {
-								const top = Math.round(entry.target.getBoundingClientRect().top + window.scrollY);
-								let uparam = commonFunctions.getRefContentSuffix(entry.target);
-								if ([...entry.target.classList].includes("carousel-deeplinks")) {
-									uparam = "p4";
-								}
-								if (typeof analytics === "object") {
-									if (uparam) {
-										analytics.track("hyperlinks", {
-											trackpagetype,
-											tracker: {
-												[uparam]: top,
-											},
-										});
-									}
-								}
-								observer.unobserve(entry.target);
-							}
-						});
-					},
-					{ threshold: 0.25 },
-				);
-				setTimeout(() => {
-					document.querySelectorAll(".deeplink").forEach((a) => {
-						observer.observe(a);
-					});
-					/* Observe carousel container (not its links) */
-					document.querySelectorAll(".carousel-deeplinks").forEach((a) => {
-						observer.observe(a);
-					});
-				}, 2000);
-			}
-		}
-		/* anchor tag tracker */
-
-
 		/* Sun pharma SideSticky*/
 		if(!sideStickyLoaded && screen.width < 1400 && ["oneindia", "boldsky"].includes(domainmiddle) && (trackpagetype == "article" || trackpagetype == "index" || trackpagetype == "database") ) {
 			sideStickyLoaded = true;
@@ -11260,165 +10957,110 @@ function getCFCode(){
                         });
                 });
 		}
-
-		
+	
 		if (!articleDeeplinksLoaded && trackpagetype == "article") {
-            articleDeeplinksLoaded = true;
+			articleDeeplinksLoaded = true;
 
-            const containsDeeplink = document.getElementById("containerMain").dataset.deeplink_flag == 1;
+			const containerMain = document.getElementById("containerMain");
+			const containsDeeplink = containerMain.dataset.deeplink_flag == 1;
 			const isArticleCustomTheme = document.getElementById("container")?.dataset.template_name == "article-custom-theme";
-			const isGrWealthPage = window.location.pathname.includes("/wealth/") && (!window.location.pathname.includes("/hw/wealth/"));
+			const fillDeeplinks = !containsDeeplink && !isArticleCustomTheme;
+			const isGrWealthPage = window.location.pathname.includes("/wealth/") && !window.location.pathname.includes("/hw/wealth/");
 			const isNativeCareerindia = window.location.hostname.includes("careerindia") && !window.location.hostname.includes("www.careerindia");
-
-
-			const version = "1.0.20.4";
-			const mobileSrc = isGrWealthPage ? `/common/grwealth-carousel-mobi.js?v=3.4` : `/common/deeplink-mobi.js?v=${version}`;
-			const desktopSrc = isGrWealthPage ? `/common/grwealth-carousel-desk.js?v=3.4` : `/common/deeplink-desk.js?v=${version}`;
+			const configKey = isNativeCareerindia ? "isNativeCareerindia" : domainmiddle;
 
 			const script = document.createElement("script");
-			script.src = isMobile ? mobileSrc : desktopSrc;
-			script.type = "text/javascript";
-
-			script.onload = () => {
-				const cfg = isNativeCareerindia ? DEEPLINK_CONFIG["isNativeCareerindia"] : DEEPLINK_CONFIG[domainmiddle];
-				const content_id = document.getElementById("containerMain").dataset.content_id ?? "";
-				const deeplink_Elements = document.querySelectorAll(cfg?.selector);
-
-				const containsTags = document.head?.dataset?.engTags?.trim() || "";
-				const isCrawlerBot = /bot|crawl|spider|mediapartners|slurp|facebookexternalhit/i.test(navigator.userAgent);
-				const isNonProdHost = /(^|\.)origin(\.|$)/i.test(window.location.hostname) || /^www\d+(\.|$)/i.test(window.location.hostname);
-				const dmpSite = window.location.hostname.replace(/\.+$/, '').toLowerCase();
-				let apiUrl = `https://dmp.oneindia.com/api/v1/dmp?tags=${document.head.dataset.engTags || ''}&dmp_limit=50&trending_limit=50&site=${dmpSite}&exclude-ids=${content_id}`;
-				if(isGrWealthPage) {
-					apiUrl = `https://dmp.oneindia.com/api/v1/dmp?tags=${document.head.dataset.engTags || ''}&dmp_limit=50&trending_limit=50&site=${dmpSite}&exclude-ids=${content_id}&description=1`;
-				} 
-				const isInAppBridgeBrowser = /jointbridge|dubox/i.test(navigator.userAgent);
-				if (deeplink_Elements.length > 0 && containsTags !== "" && !isInAppBridgeBrowser && !isCrawlerBot && !isNonProdHost) {
-
-					fetch(`${apiUrl}`)
-						.then((res) => {
-							console.log("DMP API Response Status:", res.status);
-							return res.json();
-						})
-						.then((data) => {
-							let mixedArr = data.dmp ? (data.dmp.length > numOfDeeplinks ? data.dmp : [...data.dmp, ...data.trending.slice(0, numOfDeeplinks - data.dmp.length)]) : data.trending;
-							let recommend = ["Also Read", "Recommended for you", "You may also like"];
-							let indexHolder = 0;
-							let usedDeeplinkCount = 0;
-
-							if(!containsDeeplink && !isArticleCustomTheme){
-								mixedArr = mixedArr.slice(0, numOfDeeplinks);
-								deeplink_Elements.forEach((element, index) => {
-									const isinsideTable = element.closest(".ds-article-table-wrapper, .oi_cms_table, table");
-									if (isinsideTable) {
-										element.remove();
-										return;
-									}
-									element.style.display="inline";
-									if (!element || !mixedArr?.length) return;
-									let num = index % 3;
-									indexHolder = index;
-									let deeplinkData = mixedArr[index];
-									if (!deeplinkData) return;
-								
-									if(!isGrWealthPage) {
-									element.innerHTML = cfg.template(deeplinkData, recommend[num], hostParam, langParam);
-									}
-								});
-							}
-
-							const isNativeplanetDesktop = (["nativeplanet"].includes(domainmiddle) && !isMobile);
-							const targetContainer = isNativeplanetDesktop
-							  ? document.querySelector(".slider-article-list-wrap") 
-							  : document.querySelector(".oi-carousel-block");
-
-							const moreFromCfg = typeof MOREFROM_CONFIG !== 'undefined' ? (isNativeCareerindia ? MOREFROM_CONFIG["isNativeCareerindia"] : MOREFROM_CONFIG[domainmiddle]) : null;
-
-							if (targetContainer && moreFromCfg && typeof moreFromCfg.renderLayout === 'function') {
-								let moreFromArticles;
-
-								if(isGrWealthPage) {
-									let fullArr = data.dmp ? [...data.dmp, ...(data.trending || [])] : (data.trending || []);
-									const carouselStart = (!containsDeeplink && !isArticleCustomTheme) ? usedDeeplinkCount : 0;
-									moreFromArticles = fullArr.slice(carouselStart, carouselStart + 12);
-								} else {
-							     	moreFromArticles = mixedArr.slice(indexHolder + 1, parseInt(indexHolder + numOfDeeplinks));
-								}
-							    const renderedHtml = moreFromCfg.renderLayout(moreFromArticles, hostParam, langParam);
-							
-							    if (isNativeplanetDesktop) {
-							        targetContainer.outerHTML = renderedHtml;
-								
-							        require(["jquery", "bxslider"], function($) {
-
-									    var $sliderList = $('.slider-article-lists ul');
-
-									    if ($sliderList.parent().hasClass('bx-viewport')) {
-									        $sliderList.destroySlider();
-									    }
-									
-									    $sliderList.bxSlider({
-									        minSlides: 3,
-									        maxSlides: 5,
-									        moveSlides: 1,
-									        slideWidth: 185,
-									        slideMargin: 20,
-									        adaptiveHeight: true,
-									        pager: false,
-									        controls: true,
-									        infiniteLoop: false,
-									        hideControlOnEnd: true
-									    });
-									});
-							    } else {
-							        targetContainer.innerHTML = renderedHtml;
-							    }
-							}
-
-
-							let designLoaded = parseInt(sessionStorage.getItem("design")) || 1;
-							let deeplinkElements = document.querySelectorAll(".oi-recommended-articles-option1, .oi-recommended-articles-option2, .oi-recommended-articles-option3");
-							if (deeplinkElements.length > 0) {
-								designTemplateLoaded = true;
-								deeplinkElements.forEach((element) => {
-									if (!element) return;
-
-									element.classList.remove("oi-recommended-articles-option1", "oi-recommended-articles-option2", "oi-recommended-articles-option3");
-									element.classList.add(`oi-recommended-articles-option${designLoaded}`);
-
-									const updateLink = () => {
-										const link = element.querySelector("a");
-										if (!link) return false;
-
-										link.dataset.uparam = `ref_source=${hostParam}-${langParam}&ref_medium=Article-Page&ref_campaign=Deep-Links-D${designLoaded}`;
-										return true;
-									};
-
-									updateLink();
-									const observer = new MutationObserver(() => {
-										if (updateLink()) {
-											observer.disconnect();
-										}
-									});
-
-									observer.observe(element, { childList: true, subtree: true });
-								});
-
-								let nextDesign = (designLoaded % 3) + 1;
-								sessionStorage.setItem("design", nextDesign);
-							}
-							globalAnchorClick();
-						})
-						.catch((err) => {
-							console.log("deeplink loading...", err);
-						});
-			}
-			};
-
+			script.src = isGrWealthPage ? `/common/grwealth-carousel-${isMobile ? "mobi" : "desk"}.js?v=3.4` : `/common/deeplink-${isMobile ? "mobi" : "desk"}.js?v=1.0.20.4`;
 			script.onerror = () => console.error("Failed to load deeplink config script:", script.src);
+			script.onload = () => {
+				const cfg = DEEPLINK_CONFIG[configKey];
+				const deeplink_Elements = document.querySelectorAll(cfg?.selector);
+				const hostname = window.location.hostname;
+				const isCrawlerBot = /bot|crawl|spider|mediapartners|slurp|facebookexternalhit/i.test(navigator.userAgent);
+				const isInAppBridgeBrowser = /jointbridge|dubox/i.test(navigator.userAgent);
+				const isNonProdHost = /(^|\.)origin(\.|$)/i.test(hostname) || /^www\d+(\.|$)/i.test(hostname);
+				if (!deeplink_Elements.length || !document.head?.dataset?.engTags?.trim() || isInAppBridgeBrowser || isCrawlerBot || isNonProdHost) return;
 
+				const dmpSite = hostname.replace(/\.+$/, "").toLowerCase();
+				const content_id = containerMain.dataset.content_id ?? "";
+				const apiUrl = `https://dmp.oneindia.com/api/v1/dmp?tags=${document.head.dataset.engTags || ""}&dmp_limit=50&trending_limit=50&site=${dmpSite}&exclude-ids=${content_id}${isGrWealthPage ? "&description=1" : ""}`;
+
+				fetch(apiUrl)
+					.then((res) => {
+						console.log("DMP API Response Status:", res.status);
+						return res.json();
+					})
+					.then((data) => {
+						let mixedArr = data.dmp ? (data.dmp.length > numOfDeeplinks ? data.dmp : [...data.dmp, ...data.trending.slice(0, numOfDeeplinks - data.dmp.length)]) : data.trending;
+						const recommend = ["Also Read", "Recommended for you", "You may also like"];
+						let indexHolder = 0;
+
+						// Fill the in-article deeplink placeholders (deeplinks inside tables are dropped)
+						if (fillDeeplinks) {
+							mixedArr = mixedArr.slice(0, numOfDeeplinks);
+							deeplink_Elements.forEach((element, index) => {
+								if (element.closest(".ds-article-table-wrapper, .oi_cms_table, table")) {
+									element.remove();
+									return;
+								}
+								element.style.display = "inline";
+								if (!mixedArr.length) return;
+								indexHolder = index;
+								if (mixedArr[index] && !isGrWealthPage) {
+									element.innerHTML = cfg.template(mixedArr[index], recommend[index % 3], hostParam, langParam);
+								}
+							});
+						}
+
+						// "More from" carousel with the articles left over after the deeplinks
+						const isNativeplanetDesktop = domainmiddle == "nativeplanet" && !isMobile;
+						const targetContainer = document.querySelector(isNativeplanetDesktop ? ".slider-article-list-wrap" : ".oi-carousel-block");
+						const moreFromCfg = typeof MOREFROM_CONFIG !== "undefined" ? MOREFROM_CONFIG[configKey] : null;
+						if (targetContainer && typeof moreFromCfg?.renderLayout === "function") {
+							// Wealth pages don't fill deeplinks, so the carousel starts from the first article
+							const moreFromArticles = isGrWealthPage ? [...(data.dmp || []), ...(data.trending || [])].slice(0, 12) : mixedArr.slice(indexHolder + 1, indexHolder + numOfDeeplinks);
+							const renderedHtml = moreFromCfg.renderLayout(moreFromArticles, hostParam, langParam);
+							if (isNativeplanetDesktop) {
+								targetContainer.outerHTML = renderedHtml;
+								require(["jquery", "bxslider"], function ($) {
+									var $sliderList = $(".slider-article-lists ul");
+									if ($sliderList.parent().hasClass("bx-viewport")) $sliderList.destroySlider();
+									$sliderList.bxSlider({ minSlides: 3, maxSlides: 5, moveSlides: 1, slideWidth: 185, slideMargin: 20, adaptiveHeight: true, pager: false, controls: true, infiniteLoop: false, hideControlOnEnd: true });
+								});
+							} else {
+								targetContainer.innerHTML = renderedHtml;
+							}
+						}
+
+						// Rotate the deeplink design (1 -> 2 -> 3) per session and tag links with it
+						const designLoaded = parseInt(sessionStorage.getItem("design")) || 1;
+						const designClasses = ["oi-recommended-articles-option1", "oi-recommended-articles-option2", "oi-recommended-articles-option3"];
+						const designElements = document.querySelectorAll("." + designClasses.join(", ."));
+						if (designElements.length > 0) {
+							designTemplateLoaded = true;
+							const uparam = `ref_source=${hostParam}-${langParam}&ref_medium=Article-Page&ref_campaign=Deep-Links-D${designLoaded}`;
+							designElements.forEach((element) => {
+								element.classList.remove(...designClasses);
+								element.classList.add(`oi-recommended-articles-option${designLoaded}`);
+								const updateLink = () => {
+									const link = element.querySelector("a");
+									if (link) link.dataset.uparam = uparam;
+									return !!link;
+								};
+								updateLink();
+								const observer = new MutationObserver(() => updateLink() && observer.disconnect());
+								observer.observe(element, { childList: true, subtree: true });
+							});
+							sessionStorage.setItem("design", (designLoaded % 3) + 1);
+						}
+						globalAnchorClick();
+					})
+					.catch((err) => {
+						console.log("deeplink loading...", err);
+					});
+			};
 			document.head.appendChild(script);
-        }
+		}
 
 		if (!indianSutrasAds) {
 			let adSlots = document.querySelectorAll("[id^='are-slot-']");
@@ -11450,7 +11092,6 @@ function getCFCode(){
 				});
 			}
 		}
-
 
 		if (!chartbeatLoaded) {
 			chartbeatLoaded = true;
@@ -11514,16 +11155,6 @@ function getCFCode(){
 					});
 			}
 		}
-
-		if (!rubiconProjectLoaded) {
-			rubiconProjectLoaded = true;
-			if ("odia.oneindia.com" == window.location.hostname || ["drivespark", "boldsky", "mykhel"].includes(domainmiddle)) {
-				let rubicon = document.createElement("script");
-				rubicon.src = "https://link.rubiconproject.com/magnite/7523.js";
-				document.head.appendChild(rubicon);
-			}
-		}
-
 	});
 
 	if (window.location.hostname === "www.oneindia.com") {
@@ -11550,27 +11181,6 @@ function getCFCode(){
 				document.getElementById("dynamicanchor").click();
 				let healthImpUrl = "https://pubads.g.doubleclick.net/gampad/clk?id=6924557502&iu=/1008496/clicktracker-oi-1";
 				trackImpHealth(healthImpUrl);
-			});
-		}
-
-		function checkConsentAndTriggerClarity() {
-			window.googlefc = window.googlefc || {};
-			window.googlefc.callbackQueue = window.googlefc.callbackQueue || [];
-			window.googlefc.callbackQueue.push({
-				CONSENT_DATA_READY: () =>
-					__tcfapi("addEventListener", 2, (tcData, success) => {
-						if (success) {
-							const hasConsent = tcData.purpose.consents && tcData.purpose.consents[1];
-							if (hasConsent) {
-								console.log("Consent granted for tracking");
-								window.clarity("consent");
-							} else {
-								console.log("Consent not granted for tracking");
-							}
-						} else {
-							console.log("Unable to retrieve consent status or TC Data is invalid");
-						}
-					}),
 			});
 		}
 	}
@@ -12692,7 +12302,7 @@ function getCFCode(){
 			height: 20px;
 		}
 	}
-</style> <script defer type="0309b63f1e92162bff44625b-text/javascript" data-pagespeed-no-defer>
+</style> <script defer type="00e2fcacb49b7c8655cec8fe-text/javascript" data-pagespeed-no-defer>
 
 	if(document.head?.dataset?.promoArticle == "true"){
         document.getElementById("adg_native_ocean") && document.getElementById("adg_native_ocean").remove();
@@ -14259,7 +13869,7 @@ function getCFCode(){
 			console.log("Outside the allowed timeframe (10 PM to 11 PM IST).");
 		}
 	}
-</script> <!---#include virtual="/common/userVisitData.html"---> <script type="0309b63f1e92162bff44625b-text/javascript">
+</script> <!---#include virtual="/common/userVisitData.html"---> <script type="00e2fcacb49b7c8655cec8fe-text/javascript">
 var desipearljsflag=0;
  function loadDesipearlNano(){
     var dpaFtSc = document.createElement("script");
@@ -14371,7 +13981,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	updateButtons();
 });
-</script> <script type="0309b63f1e92162bff44625b-text/javascript">
+</script> <script type="00e2fcacb49b7c8655cec8fe-text/javascript">
             if (document.querySelector("#videos")) {
     //fetch('https://www.goodreturns.in/videos/tagFeeds/?tags=&limit=5&oi_datatype=json', { cache: 'no-store' })
  fetch('https://videos.oneindia.com/yt_fetch_videos.php?feed_type=youtube&lang=english&event_name=gr-wealth-2026&limit=5', { cache: 'no-store' })
@@ -14435,4 +14045,4 @@ document.addEventListener("DOMContentLoaded", () => {
 							updateButtons();
 						}, 2000);
 }
-</script> <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="0309b63f1e92162bff44625b-|49" defer></script></body> </html>
+</script> <script src="/cdn-cgi/scripts/7d0fa10a/cloudflare-static/rocket-loader.min.js" data-cf-settings="00e2fcacb49b7c8655cec8fe-|49" defer></script></body> </html>
